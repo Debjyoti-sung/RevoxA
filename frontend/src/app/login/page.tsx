@@ -1,36 +1,126 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Sparkles, Mail, Lock, ShieldCheck, ArrowRight, UserPlus, Info } from 'lucide-react';
-import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '../../hooks/useAuth';
+import { supabase } from '../../lib/supabase';
+import { Sparkles, Mail, Lock, ShieldCheck, ArrowRight, UserPlus, Info, AlertTriangle, RefreshCw } from 'lucide-react';
 
 export default function LoginPage() {
+  const router = useRouter();
+  const { user, signInWithGoogle, authenticated, loading: authLoading } = useAuth();
+  
   const [mode, setMode] = useState<'login' | 'signup' | 'forgot'>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [workspace, setWorkspace] = useState('');
+  const [loading, setLoading] = useState(false);
   const [successMsg, setSuccessMsg] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // 1. If already authenticated, redirect to home immediately
+  useEffect(() => {
+    if (authenticated && !authLoading) {
+      router.replace('/');
+    }
+  }, [authenticated, authLoading, router]);
+
+  // 2. Handle form-based signup, login, password recovery
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (mode === 'login') {
-      setSuccessMsg("Logged in successfully! Redirecting...");
-      setTimeout(() => window.location.href = '/', 1200);
-    } else if (mode === 'signup') {
-      setSuccessMsg("Account created! Initializing workspace...");
-      setTimeout(() => window.location.href = '/', 1500);
-    } else {
-      setSuccessMsg("Password reset email sent. Please check your inbox.");
-      setTimeout(() => {
-        setSuccessMsg('');
-        setMode('login');
-      }, 3000);
+    setLoading(true);
+    setErrorMsg('');
+    setSuccessMsg('');
+
+    try {
+      if (mode === 'login') {
+        const { error } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+
+        if (error) throw error;
+
+        setSuccessMsg("Logged in successfully! Redirecting...");
+        setTimeout(() => router.replace('/'), 1200);
+      } else if (mode === 'signup') {
+        const { error } = await supabase.auth.signUp({
+          email,
+          password,
+          options: {
+            data: {
+              workspace_name: workspace || 'Acme Workspace',
+              full_name: email.split('@')[0],
+            }
+          }
+        });
+
+        if (error) throw error;
+
+        setSuccessMsg("Account created! Please check your email inbox to verify your account.");
+      } else {
+        // Recover password
+        const { error } = await supabase.auth.resetPasswordForEmail(email, {
+          redirectTo: `${window.location.origin}/auth/reset-password`,
+        });
+
+        if (error) throw error;
+
+        setSuccessMsg("Password reset email sent. Please check your inbox.");
+        setTimeout(() => {
+          setSuccessMsg('');
+          setMode('login');
+        }, 5000);
+      }
+    } catch (err: any) {
+      console.error('Auth action error:', err.message);
+      setErrorMsg(err.message || "An authentication error occurred. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
+  // 3. Google OAuth login flow
+  const handleGoogleLogin = async () => {
+    setLoading(true);
+    setErrorMsg('');
+    setSuccessMsg('');
+
+    const { error } = await signInWithGoogle();
+    if (error) {
+      setErrorMsg(error.message || "Google Sign-In failed. Please verify configurations.");
+      setLoading(false);
+    } else {
+      setSuccessMsg("Connecting to Google authentication...");
+    }
+  };
+
+  // Mock sign-in function for local offline development bypass
+  const handleMockBypass = () => {
+    setSuccessMsg("[DEV BYPASS] Mock log in success. Loading workspace...");
+    
+    // Simulate auth token for middleware
+    const mockToken = 'mock-sb-token-12345';
+    const expires = new Date(Date.now() + 7 * 24 * 3600 * 1000).toUTCString();
+    document.cookie = `sb-access-token=${mockToken}; path=/; expires=${expires}; SameSite=Lax; Secure`;
+    
+    setTimeout(() => {
+      window.location.href = '/';
+    }, 1200);
+  };
+
+  if (authLoading) {
+    return (
+      <div className="min-h-screen bg-background flex flex-col items-center justify-center space-y-4">
+        <RefreshCw className="w-8 h-8 text-primaryAccent animate-spin" />
+        <p className="text-xs text-secondaryText font-medium animate-pulse">Initializing Auth Gate...</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-6 animate-fade-in">
-      <div className="w-full max-w-4xl bg-cardBg border border-cardBorder rounded-2xl shadow-lg flex overflow-hidden min-h-[500px]">
+    <div className="min-h-screen bg-background flex items-center justify-center p-6 animate-fade-in font-sans">
+      <div className="w-full max-w-4xl bg-cardBg border border-cardBorder rounded-2xl shadow-lg flex overflow-hidden min-h-[550px]">
         
         {/* LEFT PANE: Authentication Forms */}
         <div className="w-full md:w-1/2 p-8 flex flex-col justify-between">
@@ -58,6 +148,28 @@ export default function LoginPage() {
               </p>
             </div>
 
+            {/* Error Message Box */}
+            {errorMsg && (
+              <div className="p-3 bg-danger/5 border border-danger/20 rounded-xl flex items-start gap-2.5 text-xs text-danger animate-fade-in">
+                <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                <div className="space-y-1">
+                  <span className="font-bold">Error Authenticating</span>
+                  <p className="text-[10px] text-danger/80 leading-relaxed">{errorMsg}</p>
+                </div>
+              </div>
+            )}
+
+            {/* Success Message Box */}
+            {successMsg && (
+              <div className="p-3 bg-success/5 border border-success/20 rounded-xl flex items-start gap-2.5 text-xs text-success animate-fade-in">
+                <ShieldCheck className="w-4 h-4 shrink-0 mt-0.5" />
+                <div className="space-y-1">
+                  <span className="font-bold">Auth Action Status</span>
+                  <p className="text-[10px] text-success/80 leading-relaxed">{successMsg}</p>
+                </div>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-3.5 text-xs">
               {mode === 'signup' && (
                 <div className="space-y-1">
@@ -67,7 +179,7 @@ export default function LoginPage() {
                     value={workspace}
                     onChange={(e) => setWorkspace(e.target.value)}
                     placeholder="e.g. Acme Product Team"
-                    className="w-full px-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder"
+                    className="w-full px-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder text-primaryText"
                     required
                   />
                 </div>
@@ -82,7 +194,7 @@ export default function LoginPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="name@company.com"
-                    className="w-full pl-9 pr-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder"
+                    className="w-full pl-9 pr-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder text-primaryText"
                     required
                   />
                 </div>
@@ -98,28 +210,31 @@ export default function LoginPage() {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="••••••••"
-                      className="w-full pl-9 pr-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder"
+                      className="w-full pl-9 pr-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder text-primaryText"
                       required
                     />
                   </div>
                 </div>
               )}
 
-              {successMsg && (
-                <p className="text-[11px] text-success font-semibold py-1 flex items-center gap-1.5 animate-pulse">
-                  <ShieldCheck className="w-4 h-4" />
-                  {successMsg}
-                </p>
-              )}
-
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 py-2.5 bg-gradient-primary hover:opacity-95 text-white rounded-xl font-semibold shadow-sm transition-transform active:scale-95"
+                disabled={loading}
+                className="w-full flex items-center justify-center gap-2 py-2.5 bg-gradient-primary hover:opacity-95 text-white rounded-xl font-semibold shadow-sm transition-transform active:scale-95 disabled:opacity-50"
               >
-                <span>
-                  {mode === 'login' ? 'Sign In to Workspace' : mode === 'signup' ? 'Create Free Workspace' : 'Send Reset Link'}
-                </span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                {loading ? (
+                  <>
+                    <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                    <span>Processing Gate...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>
+                      {mode === 'login' ? 'Sign In to Workspace' : mode === 'signup' ? 'Create Free Workspace' : 'Send Reset Link'}
+                    </span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </>
+                )}
               </button>
             </form>
 
@@ -133,11 +248,10 @@ export default function LoginPage() {
                 </div>
 
                 <button
-                  onClick={() => {
-                    setSuccessMsg("Connecting with Google Account...");
-                    setTimeout(() => window.location.href = '/', 1200);
-                  }}
-                  className="w-full py-2.5 border border-cardBorder hover:bg-secondaryBg rounded-xl font-semibold text-secondaryText hover:text-primaryText flex items-center justify-center gap-2"
+                  type="button"
+                  onClick={handleGoogleLogin}
+                  disabled={loading}
+                  className="w-full py-2.5 border border-cardBorder hover:bg-secondaryBg rounded-xl font-semibold text-secondaryText hover:text-primaryText flex items-center justify-center gap-2 transition-all disabled:opacity-50"
                 >
                   <svg className="w-4 h-4" viewBox="0 0 24 24">
                     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -149,29 +263,43 @@ export default function LoginPage() {
                 </button>
               </div>
             )}
+            
+            {/* Developer Sandbox Bypass Button */}
+            {process.env.NODE_ENV === 'development' && (
+              <div className="pt-2 border-t border-dashed border-cardBorder">
+                <button
+                  type="button"
+                  onClick={handleMockBypass}
+                  className="w-full flex items-center justify-center gap-1.5 py-1.5 bg-warning/5 border border-warning/20 hover:bg-warning/10 text-[10px] text-warning font-semibold rounded-lg transition-colors"
+                >
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>Sandbox Environment Bypass (Mock Sign In)</span>
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Form footer toggle options */}
           <div className="flex justify-between text-[10px] font-semibold text-secondaryText pt-4 border-t border-cardBorder">
             {mode === 'login' ? (
               <>
-                <button onClick={() => setMode('signup')} className="hover:text-primaryAccent">
+                <button type="button" onClick={() => setMode('signup')} className="hover:text-primaryAccent">
                   Need an account? Sign Up
                 </button>
-                <button onClick={() => setMode('forgot')} className="hover:text-primaryAccent">
+                <button type="button" onClick={() => setMode('forgot')} className="hover:text-primaryAccent">
                   Forgot Password?
                 </button>
               </>
             ) : mode === 'signup' ? (
               <>
-                <button onClick={() => setMode('login')} className="hover:text-primaryAccent">
+                <button type="button" onClick={() => setMode('login')} className="hover:text-primaryAccent">
                   Already have an account? Sign In
                 </button>
                 <span />
               </>
             ) : (
               <>
-                <button onClick={() => setMode('login')} className="hover:text-primaryAccent">
+                <button type="button" onClick={() => setMode('login')} className="hover:text-primaryAccent">
                   Return to Sign In
                 </button>
                 <span />
@@ -181,8 +309,7 @@ export default function LoginPage() {
         </div>
 
         {/* RIGHT PANE: Branding Illustration */}
-        <div className="hidden md:block md:w-1/2 bg-gradient-primary relative p-8 text-white flex flex-col justify-between">
-          {/* Decorative radial blur background */}
+        <div className="hidden md:flex md:w-1/2 bg-gradient-primary relative p-8 text-white flex-col justify-between">
           <div className="absolute inset-0 bg-black/10 z-0" />
           
           <div className="relative z-10 flex flex-col justify-between h-full">

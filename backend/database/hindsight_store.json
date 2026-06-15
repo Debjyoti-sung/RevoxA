@@ -1,6 +1,13 @@
 {
   "memories": [
     {
+      "id": "mem-fb-feedback-101",
+      "bank_id": "default",
+      "title": "Live Alert: Stripe payment failed on mobile client safari",
+      "content": "User report: \"Stripe payment failed on mobile client safari\". Ingested from hubspot.",
+      "created_at": "2026-06-15T07:03:51.307779Z"
+    },
+    {
       "id": "feedback-memory-1",
       "bank_id": "default",
       "title": "Subscription renew failing with error code 402",
@@ -168,6 +175,21 @@
     }
   ],
   "feedbacks": [
+    {
+      "title": "Live Alert: Stripe payment failed on mobile client safari",
+      "content": "User report: \"Stripe payment failed on mobile client safari\". Ingested from hubspot.",
+      "source_type": "hubspot",
+      "customer_name": "Evelyn Vance",
+      "customer_email": "evelynvance@livefeedback.com",
+      "sentiment": "negative",
+      "sentiment_score": -0.7,
+      "severity": "high",
+      "status": "new",
+      "cluster_id": "cluster-1",
+      "feature_tag": "Billing",
+      "id": "feedback-101",
+      "created_at": "2026-06-15T07:03:51.307779Z"
+    },
     {
       "id": "feedback-1",
       "title": "Subscription renew failing with error code 402",
@@ -3458,6 +3480,14 @@
     }
   ],
   "notifications": [
+    {
+      "id": "not-5",
+      "title": "Critical feedback from Evelyn Vance",
+      "message": "Stripe payment failed on mobile client safari",
+      "type": "ai",
+      "read": false,
+      "time": "Just now"
+    },
     {
       "id": "not-1",
       "title": "New Critical Cluster Detected",

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useStore } from '../store/useStore';
 import { Bell, Sparkles, User, LogOut, Check, RefreshCw } from 'lucide-react';
+import UserMenu from './UserMenu';
 
 export default function Header() {
   const pathname = usePathname();
@@ -93,36 +94,8 @@ export default function Header() {
           )}
         </div>
 
-        {/* Profile Avatar */}
-        <div className="relative">
-          <button 
-            onClick={() => setShowProfile(!showProfile)}
-            className="w-10 h-10 rounded-xl bg-gradient-primary p-[1.5px] transition-transform hover:scale-105"
-          >
-            <div className="w-full h-full rounded-[10px] bg-cardBg flex items-center justify-center font-heading font-bold text-sm text-primaryAccent">
-              SJ
-            </div>
-          </button>
-
-          {showProfile && (
-            <div className="absolute right-0 mt-2 w-56 bg-cardBg border border-cardBorder rounded-xl shadow-lg p-4 z-30">
-              <div className="pb-3 border-b border-cardBorder mb-3">
-                <p className="font-heading font-bold text-sm text-primaryText">Sarah Jenkins</p>
-                <p className="text-[10px] text-secondaryText">sarah@revoxa.ai · Owner</p>
-              </div>
-              <div className="space-y-1">
-                <button className="w-full flex items-center gap-2.5 px-2.5 py-2 hover:bg-secondaryBg rounded-lg text-xs text-secondaryText hover:text-primaryText transition-colors">
-                  <User className="w-3.5 h-3.5" />
-                  My Workspace Profile
-                </button>
-                <button className="w-full flex items-center gap-2.5 px-2.5 py-2 hover:bg-secondaryBg rounded-lg text-xs text-danger hover:bg-danger/5 transition-colors">
-                  <LogOut className="w-3.5 h-3.5" />
-                  Sign Out
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
+        {/* Dynamic User Menu Dropdown */}
+        <UserMenu />
       </div>
     </header>
   );

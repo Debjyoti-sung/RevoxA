@@ -1,7 +1,5 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
-import Copilot from '../components/Copilot';
+import AppLayout from '../components/AppLayout';
 import './globals.css';
 
 export const metadata = {
@@ -42,26 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-background text-primaryText font-sans min-h-screen">
-        <div className="flex min-h-screen">
-          {/* Side Navigation Sidebar */}
-          <Sidebar />
-
-          {/* Main Content Pane */}
-          <div className="flex-1 pl-64 flex flex-col min-h-screen">
-            {/* Header Toolbar */}
-            <Header />
-
-            {/* Viewport Render Area */}
-            <main className="flex-1 p-8 overflow-y-auto">
-              {children}
-            </main>
-          </div>
-        </div>
-
-        {/* Floating Copilot Widget */}
-        <Copilot />
+        <AppLayout>{children}</AppLayout>
       </body>
     </html>
   );
 }
-

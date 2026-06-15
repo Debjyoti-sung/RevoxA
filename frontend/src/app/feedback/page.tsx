@@ -342,7 +342,7 @@ export default function FeedbackHub() {
                       <td className="py-3.5 px-5">
                         <span className="flex items-center gap-1 text-[10px] text-secondaryText whitespace-nowrap">
                           <Clock className="w-3 h-3" />
-                          {new Date(item.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+                          {new Date(item.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                         </span>
                       </td>
 
@@ -417,7 +417,7 @@ export default function FeedbackHub() {
                     </span>
                     <span className="text-[10px] text-secondaryText ml-auto flex items-center gap-1">
                       <Clock className="w-3 h-3" />
-                      {new Date(item.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+                      {new Date(item.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                     </span>
                   </div>
 
@@ -536,7 +536,7 @@ export default function FeedbackHub() {
                   },
                   {
                     label: 'Received',
-                    content: <span className="text-xs text-primaryText font-medium flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-secondaryText" />{new Date(selected.created_at).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    content: <span className="text-xs text-primaryText font-medium flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-secondaryText" />{new Date(selected.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                   },
                   {
                     label: 'Signal ID',

@@ -116,7 +116,7 @@ export default function MemoryBank() {
                 <div className="flex justify-between items-start">
                   <div className="space-y-0.5">
                     <h4 className="font-bold text-xs text-primaryText">{mem.title}</h4>
-                    <span className="text-[9px] text-secondaryText">Commited via {mem.customer_name} · {new Date(mem.created_at).toLocaleDateString()}</span>
+                    <span className="text-[9px] text-secondaryText">Commited via {mem.customer_name} · {new Date(mem.created_at).toLocaleDateString('en-US')}</span>
                   </div>
                   <button
                     onClick={() => deleteMemory(mem.id)}

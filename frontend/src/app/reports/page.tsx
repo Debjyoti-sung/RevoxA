@@ -18,7 +18,7 @@ export default function ReportsCenter() {
     setTimeout(() => {
       setReportData({
         title: `REVOXA ${reportType} Intelligence Report`,
-        date: new Date().toLocaleDateString(undefined, { month: 'long', year: 'numeric' }),
+        date: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
         stats: {
           totalIngested: 5120,
           growthRate: "+18.4% MoM",

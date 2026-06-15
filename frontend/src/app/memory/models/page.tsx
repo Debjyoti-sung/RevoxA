@@ -67,7 +67,7 @@ export default function MentalModels() {
             <div className="pt-4 border-t border-cardBorder mt-4 flex items-center justify-between">
               <span className="text-[9px] text-secondaryText flex items-center gap-1">
                 <Calendar className="w-3 h-3" />
-                Updated: {new Date(model.last_updated).toLocaleDateString()}
+                Updated: {new Date(model.last_updated).toLocaleDateString('en-US')}
               </span>
               <button
                 onClick={() => setSelectedModel(model)}
@@ -157,7 +157,7 @@ export default function MentalModels() {
               <div>
                 <span className="text-[9px] uppercase font-bold text-secondaryText">Last Updated</span>
                 <p className="text-xs font-bold text-primaryText mt-1">
-                  {new Date(selectedModel.last_updated).toLocaleDateString()}
+                  {new Date(selectedModel.last_updated).toLocaleDateString('en-US')}
                 </p>
               </div>
             </div>
