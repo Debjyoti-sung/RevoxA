@@ -12,7 +12,7 @@ const serverSchema = z.object({
   BACKEND_URL: z.string().default('http://127.0.0.1:8000'),
   SUPABASE_SERVICE_ROLE_KEY: z.string().default('mock-supabase-service-role-key'),
   SUPABASE_JWT_SECRET: z.string().default('mock-supabase-jwt-secret'),
-  OPENAI_API_KEY: z.string().default('mock-openai-api-key'),
+  GROQ_API_KEY: z.string().optional().or(z.literal('')),
   ANTHROPIC_API_KEY: z.string().optional().or(z.literal('')),
   GOOGLE_AI_API_KEY: z.string().optional().or(z.literal('')),
   OPENROUTER_API_KEY: z.string().optional().or(z.literal('')),

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
@@ -6,12 +7,13 @@ from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 
-# Load local environment files
-load_dotenv()
+# Load root .env (one level up from this backend/ directory)
+_root_env = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=_root_env, override=True)
 
 # Import local service connectors
-from .services.hindsight import get_hindsight_client
-from .services.groq_reasoning import get_groq_reasoning_client
+from services.hindsight import get_hindsight_client
+from services.groq_reasoning import get_groq_reasoning_client
 
 app = FastAPI(
     title="RevoxA Memory Intelligence API",
@@ -279,4 +281,4 @@ if __name__ == "__main__":
     import uvicorn
     # Read port from env or default to 8000
     port = int(os.getenv("PORT", 8000))
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True, app_dir=".")
