@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useCallback } from 'react';
 import { useStore } from '../../store/useStore';
 import { Feedback } from '../../lib/seedData';
 import {
@@ -72,6 +72,8 @@ export default function FeedbackHub() {
   const [semantic, setSemantic]   = useState(false);
   const [viewMode, setViewMode]   = useState<'table' | 'cards'>('table');
   const [filterOpen, setFilterOpen] = useState(true);
+  const [searchFocused, setSearchFocused] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const filtered = useMemo(() => feedbacks.filter(item => {
     const q = searchText.toLowerCase();
@@ -170,29 +172,125 @@ export default function FeedbackHub() {
 
         {filterOpen && (
           <div className="px-5 pb-5 border-t border-cardBorder space-y-4 pt-4">
-            <div className="flex flex-col md:flex-row gap-3">
-              {/* Search */}
-              <div className="relative flex-1">
-                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-secondaryText" />
-                <input
-                  type="text"
-                  value={searchText}
-                  onChange={e => setSearchText(e.target.value)}
-                  placeholder="Search by topic, customer name, email, or content..."
-                  className="w-full pl-10 pr-4 py-2.5 bg-secondaryBg rounded-xl text-xs text-primaryText focus:outline-none focus:ring-2 focus:ring-primaryAccent/30 transition-all placeholder:text-secondaryText/60"
-                />
-              </div>
-              {/* Semantic AI toggle */}
-              <button
-                onClick={() => setSemantic(!semantic)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
-                  semantic ? 'bg-gradient-primary text-white shadow-md scale-105' : 'bg-secondaryBg text-secondaryText hover:text-primaryText border border-cardBorder'
-                }`}
-              >
-                <Sparkles className={`w-3.5 h-3.5 ${semantic ? 'animate-pulse' : ''}`} />
-                Semantic Mode {semantic ? 'ON' : 'OFF'}
-              </button>
-            </div>
+            {/* ─── Enhanced Search Bar ─── */}
+            {(() => {
+              const recentSearches = ['SSO login error', 'Billing webhook', 'Onboarding friction', 'Slack integration'];
+              const quickChips = [
+                { label: '🔴 Critical', value: 'critical' },
+                { label: '😤 Negative', value: 'negative' },
+                { label: '💳 Billing', value: 'billing' },
+                { label: '🚀 Onboarding', value: 'onboarding' },
+              ];
+              return (
+                <div className="flex flex-col md:flex-row gap-3">
+                  {/* Search input group */}
+                  <div className="relative flex-1 group">
+                    {/* Animated glow ring on focus */}
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primaryAccent/20 to-secondaryAccent/20 opacity-0 group-focus-within:opacity-100 blur-sm transition-all duration-300 pointer-events-none -z-0" />
+
+                    <div className="relative flex items-center bg-secondaryBg border border-cardBorder group-focus-within:border-primaryAccent/50 rounded-xl transition-all duration-300 shadow-sm group-focus-within:shadow-primaryAccent/10 group-focus-within:shadow-md">
+                      {/* Search icon */}
+                      <Search className="absolute left-3.5 w-3.5 h-3.5 text-secondaryText group-focus-within:text-primaryAccent transition-colors duration-200 pointer-events-none z-10" />
+
+                      {/* Input */}
+                      <input
+                        ref={searchInputRef}
+                        type="text"
+                        value={searchText}
+                        onChange={e => setSearchText(e.target.value)}
+                        onFocus={() => setSearchFocused(true)}
+                        onBlur={() => setTimeout(() => setSearchFocused(false), 150)}
+                        onKeyDown={e => { if (e.key === 'Escape') { setSearchText(''); setSearchFocused(false); } }}
+                        placeholder="Search by topic, customer name, email, or content..."
+                        className="w-full pl-10 pr-28 py-2.5 bg-transparent rounded-xl text-xs text-primaryText focus:outline-none placeholder:text-secondaryText/50 transition-all"
+                      />
+
+                      {/* Right-side controls inside input */}
+                      <div className="absolute right-2.5 flex items-center gap-1.5">
+                        {/* Char counter */}
+                        {searchText.length > 0 && (
+                          <span className="text-[9px] font-mono text-secondaryText/60 tabular-nums">
+                            {searchText.length}
+                          </span>
+                        )}
+                        {/* Clear button */}
+                        {searchText.length > 0 && (
+                          <button
+                            onClick={() => { setSearchText(''); searchInputRef.current?.focus(); }}
+                            className="w-4 h-4 rounded-full bg-secondaryText/20 hover:bg-danger/20 hover:text-danger text-secondaryText flex items-center justify-center transition-all"
+                            title="Clear search (Esc)"
+                          >
+                            <X className="w-2.5 h-2.5" />
+                          </button>
+                        )}
+                        {/* Keyboard shortcut hint */}
+                        {searchText.length === 0 && (
+                          <span className="hidden md:flex items-center gap-0.5 text-[9px] text-secondaryText/40 font-mono bg-secondaryBg border border-cardBorder px-1.5 py-0.5 rounded">
+                            /
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Recent searches + quick chips dropdown */}
+                    {searchFocused && (
+                      <div className="absolute top-full left-0 right-0 mt-1.5 bg-white border border-cardBorder rounded-xl shadow-xl z-50 overflow-hidden animate-scale-in">
+                        {searchText.length === 0 && (
+                          <div className="p-3 border-b border-cardBorder">
+                            <p className="text-[9px] font-bold text-secondaryText uppercase tracking-widest mb-2">Recent Searches</p>
+                            <div className="space-y-0.5">
+                              {recentSearches.map(r => (
+                                <button
+                                  key={r}
+                                  onClick={() => { setSearchText(r); setSearchFocused(false); }}
+                                  className="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-secondaryBg text-xs text-primaryText transition-colors"
+                                >
+                                  <Clock className="w-3 h-3 text-secondaryText flex-shrink-0" />
+                                  {r}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        <div className="p-3">
+                          <p className="text-[9px] font-bold text-secondaryText uppercase tracking-widest mb-2">Quick Filters</p>
+                          <div className="flex flex-wrap gap-1.5">
+                            {quickChips.map(c => (
+                              <button
+                                key={c.value}
+                                onClick={() => { setSearchText(c.value); setSearchFocused(false); }}
+                                className="px-2.5 py-1 bg-secondaryBg hover:bg-primaryAccent/10 hover:text-primaryAccent border border-cardBorder rounded-lg text-[10px] font-semibold text-primaryText transition-all"
+                              >
+                                {c.label}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        {searchText.length > 0 && (
+                          <div className="px-3 pb-3">
+                            <div className="flex items-center gap-2 text-[10px] text-secondaryText">
+                              <Search className="w-3 h-3" />
+                              Press <kbd className="px-1 py-0.5 bg-secondaryBg border border-cardBorder rounded text-[9px] font-mono">Enter</kbd> to search for "{searchText}"
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Semantic AI toggle */}
+                  <button
+                    onClick={() => setSemantic(!semantic)}
+                    className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
+                      semantic ? 'bg-gradient-primary text-white shadow-md scale-105' : 'bg-secondaryBg text-secondaryText hover:text-primaryText border border-cardBorder'
+                    }`}
+                  >
+                    <Sparkles className={`w-3.5 h-3.5 ${semantic ? 'animate-pulse' : ''}`} />
+                    Semantic Mode {semantic ? 'ON' : 'OFF'}
+                  </button>
+                </div>
+              );
+            })()}
 
             <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
               {[

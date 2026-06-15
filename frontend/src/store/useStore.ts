@@ -204,7 +204,13 @@ export const useStore = create<StoreState>((set, get) => ({
 
   // Filter Actions
   setSearchText: (text) => set({ searchText: text }),
-  setFilters: (filters) => set((state) => ({ ...state, ...filters })),
+  setFilters: (filters) => set((state) => ({
+    ...(filters.source    !== undefined && { sourceFilter:    filters.source }),
+    ...(filters.sentiment !== undefined && { sentimentFilter: filters.sentiment }),
+    ...(filters.severity  !== undefined && { severityFilter:  filters.severity }),
+    ...(filters.feature   !== undefined && { featureFilter:   filters.feature }),
+    ...(filters.status    !== undefined && { statusFilter:    filters.status }),
+  })),
   resetFilters: () => set({
     sourceFilter: 'all',
     sentimentFilter: 'all',
