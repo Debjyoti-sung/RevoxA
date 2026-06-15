@@ -99,7 +99,7 @@ class GroqReasoningClient:
         Generate executive summary report values.
         """
         return {
-            "summary": f"Revoxa operations for the last {timeframe}. System health is high, key checkout issues resolved.",
+            "summary": f"RevoxA operations for the last {timeframe}. System health is high, key checkout issues resolved.",
             "confidence": 95
         }
 

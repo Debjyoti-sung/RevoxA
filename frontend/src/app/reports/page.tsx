@@ -17,7 +17,7 @@ export default function ReportsCenter() {
     setReportData(null);
     setTimeout(() => {
       setReportData({
-        title: `REVOXA ${reportType} Intelligence Report`,
+        title: `RevoxA ${reportType} Intelligence Report`,
         date: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
         stats: {
           totalIngested: 5120,
@@ -116,7 +116,7 @@ export default function ReportsCenter() {
               <div className="flex justify-between items-start pb-4 border-b border-cardBorder">
                 <div>
                   <h3 className="font-heading font-extrabold text-base text-primaryText">{reportData.title}</h3>
-                  <span className="text-[10px] text-secondaryText">{reportData.date} · REVOXA AI Analysis</span>
+                  <span className="text-[10px] text-secondaryText">{reportData.date} · RevoxA AI Analysis</span>
                 </div>
                 <div className="flex gap-2">
                   <button

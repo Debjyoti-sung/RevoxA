@@ -7,6 +7,7 @@ import ProtectedRoute from '../components/ProtectedRoute';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Copilot from './Copilot';
+import MemoryDebugPanel from './debug/MemoryDebugPanel';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -15,13 +16,13 @@ interface AppLayoutProps {
 export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const pathname = usePathname();
 
-  // Pages that do not require layout structure or protection
-  const isAuthPage = pathname === '/login' || pathname?.startsWith('/auth/');
+  // Pages that do not require layout structure or protection (e.g. Landing Page, Login, Auth Callback)
+  const isPublicPage = pathname === '/' || pathname === '/login' || pathname?.startsWith('/auth/');
 
   return (
     <AuthProvider>
-      {isAuthPage ? (
-        // Raw page layout for Auth pages (Login, OAuth Callback, etc)
+      {isPublicPage ? (
+        // Raw page layout for public pages (Landing Page, Login, OAuth Callback, etc)
         <main className="min-h-screen">
           {children}
         </main>
@@ -44,8 +45,15 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
             </div>
           </div>
 
-          {/* Floating Copilot Widget */}
-          <Copilot />
+          {/* Floating UI controls stacked bottom-right */}
+          <div className="fixed bottom-6 right-6 flex flex-col gap-4 items-end z-50 pointer-events-none">
+            <div className="pointer-events-auto">
+              <MemoryDebugPanel />
+            </div>
+            <div className="pointer-events-auto">
+              <Copilot />
+            </div>
+          </div>
         </ProtectedRoute>
       )}
     </AuthProvider>

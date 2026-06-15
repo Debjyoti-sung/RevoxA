@@ -73,7 +73,7 @@ export default function SettingsPage() {
                 <label className="font-bold text-secondaryText uppercase block">Workspace Brand Name</label>
                 <input
                   type="text"
-                  defaultValue="REVOXA"
+                  defaultValue="RevoxA"
                   className="w-full px-3.5 py-2.5 bg-secondaryBg rounded-xl focus:outline-none border border-cardBorder font-medium text-primaryText"
                 />
               </div>

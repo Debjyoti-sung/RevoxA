@@ -3,9 +3,9 @@ import AppLayout from '../components/AppLayout';
 import './globals.css';
 
 export const metadata = {
-  title: 'REVOXA — Enterprise Memory Intelligence Platform',
-  description: 'AI-driven long-term feedback memory, semantic clustering, and product recommendations powered by REVOXA.',
-  applicationName: 'REVOXA',
+  title: 'RevoxA — Enterprise Memory Intelligence Platform',
+  description: 'AI-driven long-term feedback memory, semantic clustering, and product recommendations powered by RevoxA.',
+  applicationName: 'RevoxA',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -18,15 +18,15 @@ export const metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'REVOXA — Enterprise Memory Intelligence Platform',
+    title: 'RevoxA — Enterprise Memory Intelligence Platform',
     description: 'AI-driven long-term feedback memory, semantic clustering, and product recommendations.',
-    siteName: 'REVOXA',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'REVOXA Logo' }],
+    siteName: 'RevoxA',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'RevoxA Logo' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'REVOXA — Enterprise Memory Intelligence Platform',
+    title: 'RevoxA — Enterprise Memory Intelligence Platform',
     description: 'AI-driven long-term feedback memory, semantic clustering, and product recommendations.',
     images: ['/og-image.png'],
   },
@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-background text-primaryText font-sans min-h-screen">
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-background text-primaryText font-sans min-h-screen" suppressHydrationWarning>
         <AppLayout>{children}</AppLayout>
       </body>
     </html>

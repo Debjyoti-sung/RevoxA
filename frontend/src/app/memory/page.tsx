@@ -62,7 +62,7 @@ export default function MemoryBank() {
             <h3 className="font-heading font-bold text-sm text-primaryText">Ingest Memory Vector</h3>
           </div>
           <p className="text-xs text-secondaryText leading-relaxed">
-            Directly commit customer notes, audit traces, or team statements to Revoxa long-term vector indexes.
+            Directly commit customer notes, audit traces, or team statements to RevoxA long-term vector indexes.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-3">

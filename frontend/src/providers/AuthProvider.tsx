@@ -48,7 +48,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
     };
 
-    initializeAuth();
+    // Safety net: force loading=false after 3s if Supabase never responds
+    const authTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    initializeAuth().finally(() => clearTimeout(authTimeout));
 
     // 2. Setup real-time listener for Auth updates
     const { data: { subscription } } = supabase.auth.onAuthStateChange(

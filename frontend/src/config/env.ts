@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 const clientSchema = z.object({
-  NEXT_PUBLIC_APP_NAME: z.string().default('REVOXA'),
+  NEXT_PUBLIC_APP_NAME: z.string().default('RevoxA'),
   NEXT_PUBLIC_APP_URL: z.string().default('http://localhost:3000'),
   NEXT_PUBLIC_ENV: z.string().default('development'),
   NEXT_PUBLIC_SUPABASE_URL: z.string().default('https://mock-supabase.supabase.co'),

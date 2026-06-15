@@ -25,7 +25,7 @@ export default function Header() {
     <header className="h-16 bg-cardBg border-b border-cardBorder px-8 flex items-center justify-between sticky top-0 z-10 shadow-sm">
       {/* Breadcrumbs */}
       <div className="flex items-center gap-2 text-sm">
-        <span className="text-secondaryText font-medium">REVOXA</span>
+        <span className="text-secondaryText font-medium">RevoxA</span>
         {breadcrumbs.map((crumb, idx) => (
           <React.Fragment key={crumb}>
             <span className="text-secondaryText/40">/</span>

@@ -25,13 +25,13 @@ export default function AuthCallbackPage() {
           document.cookie = `sb-access-token=${data.session.access_token}; path=/; expires=${expires}; SameSite=Lax; Secure`;
           
           console.log('Session synchronized, redirecting to Dashboard...');
-          router.replace('/');
+          router.replace('/dashboard');
         } else {
           // If no session found yet, wait briefly to allow hash parsing
           setTimeout(async () => {
             const { data: retryData } = await supabase.auth.getSession();
             if (retryData?.session) {
-              router.replace('/');
+              router.replace('/dashboard');
             } else {
               setErrorMsg('No valid active session detected. Re-authenticating...');
               setTimeout(() => router.replace('/login'), 2000);

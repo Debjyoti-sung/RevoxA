@@ -72,11 +72,11 @@ export default function Sidebar() {
       <div className="p-5 border-b border-cardBorder flex items-center gap-3">
         <img
           src="/logo.png"
-          alt="REVOXA Logo"
+          alt="RevoxA Logo"
           className="h-9 w-auto object-contain"
         />
         <div>
-          <h1 className="font-heading font-bold text-lg text-primaryText leading-none">REVOXA</h1>
+          <h1 className="font-heading font-bold text-lg text-primaryText leading-none">RevoxA</h1>
           <span className="text-[10px] text-secondaryText tracking-wide uppercase font-semibold">Memory Intelligence</span>
         </div>
       </div>

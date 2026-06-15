@@ -5,6 +5,7 @@ export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   const protectedPrefixes = [
+    '/dashboard',
     '/feedback',
     '/memory',
     '/memory-graph',
@@ -17,8 +18,7 @@ export function middleware(req: NextRequest) {
     '/settings',
   ];
 
-  const isHome = pathname === '/';
-  const isProtected = isHome || protectedPrefixes.some(prefix => pathname.startsWith(prefix));
+  const isProtected = protectedPrefixes.some(prefix => pathname.startsWith(prefix));
 
   if (isProtected) {
     const token = req.cookies.get('sb-access-token')?.value;
@@ -32,7 +32,7 @@ export function middleware(req: NextRequest) {
     if (pathname.startsWith('/admin')) {
       const userRole = req.cookies.get('user-role')?.value || 'user';
       if (userRole !== 'admin' && userRole !== 'owner' && !bypassAuth) {
-        const homeUrl = new URL('/', req.url);
+        const homeUrl = new URL('/dashboard', req.url);
         return NextResponse.redirect(homeUrl);
       }
     }

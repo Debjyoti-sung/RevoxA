@@ -80,7 +80,7 @@ export default function AIInsights() {
         "4. No anomalies detected in active webhook lines."
       ],
       evidence: [
-        "Revoxa Memory Bank logs",
+        "RevoxA Memory Bank logs",
         "Knowledge Evolution Milestones"
       ],
       recommendation: "Conduct quarterly customer satisfaction review."
@@ -100,7 +100,7 @@ export default function AIInsights() {
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primaryAccent animate-spin-slow" />
             <div>
-              <h3 className="font-heading font-extrabold text-sm text-primaryText">Revoxa Intelligence Console</h3>
+              <h3 className="font-heading font-extrabold text-sm text-primaryText">RevoxA Intelligence Console</h3>
               <p className="text-[10px] text-secondaryText">Ask questions across Hindsight long-term memories</p>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function AIInsights() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Ask Revoxa Intelligence (e.g. what is growing fastest?)..."
+              placeholder="Ask RevoxA Intelligence (e.g. what is growing fastest?)..."
               disabled={isThinking}
               className="flex-1 bg-secondaryBg px-3.5 py-2.5 rounded-xl text-xs text-primaryText focus:outline-none focus:ring-1 focus:ring-primaryAccent"
             />

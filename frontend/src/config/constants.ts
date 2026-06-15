@@ -1,6 +1,6 @@
 export const APP_CONSTANTS = {
-  APP_NAME: 'REVOXA',
-  COMPANY_NAME: 'REVOXA',
+  APP_NAME: 'RevoxA',
+  COMPANY_NAME: 'RevoxA',
   VERSION: '1.2.0-Alpha',
   DEFAULT_THEME: 'light',
   SESSION_COOKIE_NAME: 'sb-access-token',

@@ -32,7 +32,7 @@ export default function Integrations() {
       <div className="space-y-1">
         <h2 className="text-2xl font-heading font-extrabold text-primaryText">Integrations Marketplace</h2>
         <p className="text-xs text-secondaryText">
-          Connect your Gmail, Slack, customer support desks, and surveys databases to Revoxa Memory banks.
+          Connect your Gmail, Slack, customer support desks, and surveys databases to RevoxA Memory banks.
         </p>
       </div>
 

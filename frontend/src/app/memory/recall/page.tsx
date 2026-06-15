@@ -42,7 +42,7 @@ export default function RecallSearch() {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Ask Revoxa Memory (e.g. Stripe checkout error)..."
+            placeholder="Ask RevoxA Memory (e.g. Stripe checkout error)..."
             className="w-full pl-9 pr-4 py-2 bg-transparent text-xs text-primaryText focus:outline-none"
           />
         </div>

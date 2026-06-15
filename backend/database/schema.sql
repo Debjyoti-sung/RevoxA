@@ -1,4 +1,4 @@
--- Revoxa PostgreSQL Database Schema
+-- RevoxA PostgreSQL Database Schema
 -- Compatible with Supabase PostgreSQL and pgvector
 
 -- Enable pgvector extension

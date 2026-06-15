@@ -1,4 +1,4 @@
-// High-Fidelity Demo Database & Seed Data for Revoxa
+// High-Fidelity Demo Database & Seed Data for RevoxA
 // Represents a scaled system of 5,000+ feedback logs, 50 clusters, 100 features, and 12 months of analytics.
 
 export interface Feedback {
@@ -272,7 +272,7 @@ const SAMPLES = [
   },
   {
     title: "Onboarding flow is incredibly confusing",
-    content: "Just signed up for Revoxa and I'm totally lost. The workspace invite email was expired when my developer clicked it. Then we couldn't figure out how to import the CSV file because the template page kept returning a 500 server error. Documentation is sparse.",
+    content: "Just signed up for RevoxA and I'm totally lost. The workspace invite email was expired when my developer clicked it. Then we couldn't figure out how to import the CSV file because the template page kept returning a 500 server error. Documentation is sparse.",
     source_type: "zendesk",
     name: "Mark Harrison",
     email: "mharrison@techcorp.io",

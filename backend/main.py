@@ -14,7 +14,7 @@ from .services.hindsight import get_hindsight_client
 from .services.groq_reasoning import get_groq_reasoning_client
 
 app = FastAPI(
-    title="Revoxa Memory Intelligence API",
+    title="RevoxA Memory Intelligence API",
     description="FastAPI service for feedback vectorization, memory recall, and Groq LLM reasoning.",
     version="1.0.0"
 )

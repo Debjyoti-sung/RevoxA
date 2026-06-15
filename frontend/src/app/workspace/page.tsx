@@ -21,7 +21,7 @@ export default function Workspace() {
       {/* Workspace Header Summary */}
       <div className="bg-cardBg border border-cardBorder rounded-2xl p-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div className="space-y-1">
-          <h2 className="text-2xl font-heading font-extrabold text-primaryText">REVOXA Workspace</h2>
+          <h2 className="text-2xl font-heading font-extrabold text-primaryText">RevoxA Workspace</h2>
           <p className="text-xs text-secondaryText">
             Manage your product analyst teams, task allocations, and integrations logs.
           </p>

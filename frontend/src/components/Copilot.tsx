@@ -31,7 +31,7 @@ export default function Copilot() {
   ];
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="relative">
       {/* Floating Toggle Bubble */}
       {!isOpen && (
         <button
@@ -43,7 +43,7 @@ export default function Copilot() {
           </div>
           {/* Tooltip */}
           <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-primaryText text-white text-[10px] font-semibold px-2.5 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
-            Ask REVOXA Intelligence
+            Ask RevoxA Intelligence
           </span>
         </button>
       )}
@@ -56,7 +56,7 @@ export default function Copilot() {
             <div className="flex items-center gap-2.5">
               <Sparkles className="w-4 h-4 animate-spin-slow" />
               <div>
-                <h3 className="font-heading font-bold text-sm leading-none">REVOXA Intelligence</h3>
+                <h3 className="font-heading font-bold text-sm leading-none">RevoxA Intelligence</h3>
                 <span className="text-[10px] text-white/80">Hindsight Memory + GPT-OSS-120B</span>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function Copilot() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask REVOXA Memory..."
+              placeholder="Ask RevoxA Memory..."
               disabled={isThinking}
               className="flex-1 bg-secondaryBg px-3.5 py-2.5 rounded-xl text-xs text-primaryText focus:outline-none focus:ring-1 focus:ring-primaryAccent disabled:opacity-50"
             />

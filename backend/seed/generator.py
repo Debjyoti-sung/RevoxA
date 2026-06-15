@@ -205,7 +205,7 @@ def generate_seed_data():
         },
         {
             "title": "Onboarding flow is incredibly confusing",
-            "content": "Just signed up for Revoxa and I'm totally lost. The workspace invite email was expired when my developer clicked it. Then we couldn't figure out how to import the CSV file because the template page kept returning a 500 server error. Documentation is sparse.",
+            "content": "Just signed up for RevoxA and I'm totally lost. The workspace invite email was expired when my developer clicked it. Then we couldn't figure out how to import the CSV file because the template page kept returning a 500 server error. Documentation is sparse.",
             "source_type": "zendesk",
             "name": "Mark Harrison",
             "email": "mharrison@techcorp.io",
@@ -414,7 +414,7 @@ def seed_database():
     with open(db_path, "w") as f:
         json.dump(db_data, f, indent=2)
         
-    print(f"Successfully generated full Revoxa mock datasets & seeded database at: {db_path}")
+    print(f"Successfully generated full RevoxA mock datasets & seeded database at: {db_path}")
 
 if __name__ == "__main__":
     seed_database()

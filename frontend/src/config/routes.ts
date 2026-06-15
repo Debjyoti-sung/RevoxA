@@ -1,6 +1,6 @@
 export const ROUTES = {
   HOME: '/',
-  DASHBOARD: '/',
+  DASHBOARD: '/dashboard',
   FEEDBACK: '/feedback',
   MEMORY: '/memory',
   MEMORY_RECALL: '/memory/recall',

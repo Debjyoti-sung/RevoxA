@@ -20,7 +20,7 @@ export default function MemoryGraph() {
 
   // Core set of mock nodes mapping relations
   const initialNodes = [
-    { id: '1', position: { x: 250, y: 150 }, data: { label: 'Revoxa Memory Engine', type: 'Core' }, type: 'input' },
+    { id: '1', position: { x: 250, y: 150 }, data: { label: 'RevoxA Memory Engine', type: 'Core' }, type: 'input' },
     // Clusters
     { id: 'c1', position: { x: 100, y: 250 }, data: { label: 'Stripe Timeout failures', type: 'Cluster', desc: 'Aggregated Stripe 402 API timeout clusters.' } },
     { id: 'c2', position: { x: 400, y: 250 }, data: { label: 'Workspace Invite expirations', type: 'Cluster', desc: 'Reports of invite links expiring prematurely.' } },
@@ -174,7 +174,7 @@ export default function MemoryGraph() {
             </button>
           </div>
           <p className="text-xs text-secondaryText leading-relaxed">
-            {selectedNode.data.desc || 'Revoxa long term memory mapping connection. Check relational lines to observe caused issues.'}
+            {selectedNode.data.desc || 'RevoxA long term memory mapping connection. Check relational lines to observe caused issues.'}
           </p>
 
           <div className="mt-3 pt-3 border-t border-cardBorder text-[9px] text-secondaryText flex items-center justify-between">

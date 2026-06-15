@@ -38,8 +38,16 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
     return <>{children}</>;
   }
 
-  // Fallback while redirecting
-  return null;
+  // Not authenticated — show redirect message while router.replace runs
+  return (
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-6 space-y-4">
+      <div className="w-10 h-10 border-4 border-primaryAccent/30 border-t-primaryAccent rounded-full animate-spin"></div>
+      <div className="space-y-2 text-center">
+        <h3 className="font-heading font-bold text-sm text-primaryText">Redirecting to Sign In...</h3>
+        <p className="text-[10px] text-secondaryText">You need to be signed in to access this page.</p>
+      </div>
+    </div>
+  );
 };
 
 export default ProtectedRoute;
