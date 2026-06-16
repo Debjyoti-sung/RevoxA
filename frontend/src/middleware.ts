@@ -22,7 +22,7 @@ export function middleware(req: NextRequest) {
 
   if (isProtected) {
     const token = req.cookies.get('sb-access-token')?.value;
-    const bypassAuth = process.env.NEXT_PUBLIC_ENV === 'development' || !process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const bypassAuth = process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENV === 'development';
 
     if (!token && !bypassAuth) {
       const loginUrl = new URL('/login', req.url);

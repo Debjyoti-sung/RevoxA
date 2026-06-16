@@ -272,3 +272,4 @@ To go live, set `HINDSIGHT_API_KEY` / `HINDSIGHT_BASE_URL` and a Groq API key �
 - **Memory Debug Panel** (`frontend/src/components/debug/MemoryDebugPanel.tsx`) — a dev-only panel (hidden when `NODE_ENV !== 'development'`) that visualizes the recall/reflect pipeline step by step: query → recall API → embedding → vector search → top-k retrieval → context injection → LLM response. Useful for understanding (and debugging) what happens on each `/memory/recall` or `/memory/reflect` call.
 - **Memory is the source of truth** — feedback is classified by Groq *before* it's retained in Hindsight, so the memory bank never holds unlabeled data. Clusters, mental models, and recommendations are all derived from this same bank rather than a separate pipeline.
 - **Confidence scores** drive routing — a `recall` response with `confidence: 0` and no items signals a genuinely new issue; a high-confidence match signals "we've seen this before."
+

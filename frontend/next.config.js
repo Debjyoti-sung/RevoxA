@@ -1,5 +1,3 @@
-const path = require('path');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -10,8 +8,10 @@ const nextConfig = {
   // Reduce unnecessary headers on API routes
   poweredByHeader: false,
 
-  // Fix: Set workspace root to silence multiple lockfiles warning and stabilize port
-  outputFileTracingRoot: path.join(__dirname, '../'),
+  // Speed up page transitions with faster prefetching
+  experimental: {
+    optimisticClientCache: true,
+  },
 
   // Allow direct fetch to local FastAPI backend from client-side
   async headers() {

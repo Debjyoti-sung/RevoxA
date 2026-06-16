@@ -20,9 +20,8 @@ export async function getSession(req: NextRequest): Promise<UserSession | null> 
   }
 
   if (!token) {
-    // If running in development and we want to bypass auth for testing,
-    // we can return a mock session if supabase is not initialized.
-    const bypassAuth = process.env.NEXT_PUBLIC_ENV === 'development' || !process.env.SUPABASE_SERVICE_ROLE_KEY;
+    // If running in development, bypass auth and return a mock session.
+    const bypassAuth = process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENV === 'development';
     if (bypassAuth) {
       return {
         id: 'mock-user-id',

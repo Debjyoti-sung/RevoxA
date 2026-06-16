@@ -24,8 +24,9 @@ export async function proxyToBackend(
       throw ApiError.tooManyRequests();
     }
 
-    // 2. Auth Session Check
-    const requireAuth = options.requireAuth !== false;
+    // 2. Auth Session Check (skip in development mode)
+    const isDev = process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENV === 'development';
+    const requireAuth = options.requireAuth !== false && !isDev;
     const session = await getSession(req);
     if (requireAuth && !session) {
       throw ApiError.unauthorized();
