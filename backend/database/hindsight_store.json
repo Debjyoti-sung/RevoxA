@@ -1,0 +1,2193 @@
+{
+  "memories": [
+    {
+      "id": "mem-fb-feedback-102",
+      "bank_id": "default",
+      "title": "Live Alert: Gmail sync credentials rejected on secondary account",
+      "content": "User report: \"Gmail sync credentials rejected on secondary account\". Ingested from zendesk.",
+      "created_at": "2026-06-15T09:30:49.987426Z"
+    },
+    {
+      "id": "mem-fb-feedback-101",
+      "bank_id": "default",
+      "title": "Live Alert: Stripe payment failed on mobile client safari",
+      "content": "User report: \"Stripe payment failed on mobile client safari\". Ingested from hubspot.",
+      "created_at": "2026-06-15T07:03:51.307779Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Subscription renew failing with error code 402",
+      "content": "I've been trying to renew our corporate plan for the last 3 days using our corporate Visa. The checkout page keeps spinning and eventually throws a Stripe timeout error code 402. We need this sorted ASAP as our team is locked out of dashboard controls.",
+      "created_at": "2026-06-14T18:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Onboarding flow is incredibly confusing",
+      "content": "Just signed up for Revoxa and I'm totally lost. The workspace invite email was expired when my developer clicked it. Then we couldn't figure out how to import the CSV file because the template page kept returning a 500 server error. Documentation is sparse.",
+      "created_at": "2026-06-14T16:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Slack notifications lag by 30 mins",
+      "content": "The webhook integrations are useful but we noticed that Slack alerts for new customer issues are delayed by 25 to 30 minutes. Real-time updates should actually be real-time, otherwise we check the dashboard manually anyway.",
+      "created_at": "2026-06-14T15:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Love the new memory graph feature!",
+      "content": "The React Flow Memory Graph is absolutely incredible! We can easily trace feedback items directly to our release schedules and pinpoint feature requests. This is a game-changer for product sprint planning.",
+      "created_at": "2026-06-14T13:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Cannot download PDF executive reports",
+      "content": "Whenever I click 'Generate Report' and select PDF format, the loading icon spins forever. Eventually, the browser says the network connection timed out. CSV export works fine, but we need PDF for our board meetings.",
+      "created_at": "2026-06-14T12:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Slow Recharts Dashboard rendering",
+      "content": "Feedback comment submitted by client. The main theme is related to slow recharts dashboard rendering and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T10:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Dark Mode visibility contrast",
+      "content": "Feedback comment submitted by client. The main theme is related to dark mode visibility contrast and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T09:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Zendesk ticket synchronization lag",
+      "content": "Feedback comment submitted by client. The main theme is related to zendesk ticket synchronization lag and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T07:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Discord Bot message scraping limit",
+      "content": "Feedback comment submitted by client. The main theme is related to discord bot message scraping limit and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T06:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Reddit subreddit ingestion throttle",
+      "content": "Feedback comment submitted by client. The main theme is related to reddit subreddit ingestion throttle and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T04:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Billing currency mismatch",
+      "content": "Feedback comment submitted by client. The main theme is related to billing currency mismatch and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T03:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding PDF Executive report downloads failing",
+      "content": "Feedback comment submitted by client. The main theme is related to pdf executive report downloads failing and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T01:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Hubspot integration CRM mapping error",
+      "content": "Feedback comment submitted by client. The main theme is related to hubspot integration crm mapping error and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-14T00:21:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding Intercom chat transcript loss",
+      "content": "Feedback comment submitted by client. The main theme is related to intercom chat transcript loss and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-13T22:51:21.561507Z"
+    },
+    {
+      "id": "feedback-memory-1",
+      "bank_id": "default",
+      "title": "Feedback report regarding API rate limits on free tier",
+      "content": "Feedback comment submitted by client. The main theme is related to api rate limits on free tier and they would like this resolved quickly. Interface performance is crucial.",
+      "created_at": "2026-06-13T21:21:21.561507Z"
+    },
+    {
+      "id": "mem-16",
+      "bank_id": "default",
+      "content": "TesTeTest backend peTest bTest backend persistence memory traceackend persis",
+      "created_at": "2026-06-14T19:02:23.958880Z"
+    },
+    {
+      "id": "mem-17",
+      "bank_id": "default",
+      "content": "Test trace backend persistenc",
+      "created_at": "2026-06-14T19:07:20.878490Z"
+    },
+    {
+      "id": "mem-18",
+      "bank_id": "default",
+      "content": "Test backend persistence memory trace",
+      "created_at": "2026-06-14T19:09:34.045952Z"
+    },
+    {
+      "id": "mem-19",
+      "bank_id": "default",
+      "content": "complains",
+      "created_at": "2026-06-14T19:30:50.202874Z"
+    }
+  ],
+  "models": [
+    {
+      "id": "model-1",
+      "name": "Payment Issues",
+      "summary": "Reflects checkout friction, credit card declines, PayPal gateway timeouts, subscription renew failures, and Stripe integration bugs.",
+      "memory_coverage": 92.5,
+      "last_updated": "2026-06-14T20:30:00Z"
+    },
+    {
+      "id": "model-2",
+      "name": "Customer Pain Points",
+      "summary": "Tracks onboarding hurdles, lack of documentation, slow response times on support channels, and difficulties with custom dashboard configurations.",
+      "memory_coverage": 88.0,
+      "last_updated": "2026-06-13T18:15:00Z"
+    },
+    {
+      "id": "model-3",
+      "name": "Feature Requests",
+      "summary": "Consolidates requests for dark mode, mobile applications, multi-workspace support, API webhooks, and deeper Hubspot syncing workflows.",
+      "memory_coverage": 76.4,
+      "last_updated": "2026-06-14T11:45:00Z"
+    },
+    {
+      "id": "model-4",
+      "name": "Product Bugs",
+      "summary": "Aggregates reportings of active sessions expiring prematurely, page crashes on heavy Recharts layouts, and CSV export file formatting errors.",
+      "memory_coverage": 84.2,
+      "last_updated": "2026-06-14T21:10:00Z"
+    },
+    {
+      "id": "model-5",
+      "name": "Onboarding Friction",
+      "summary": "Identifies drops in user activation due to excessive setup steps, email validation bugs, and initial workspace invitation failures.",
+      "memory_coverage": 91.0,
+      "last_updated": "2026-06-12T09:00:00Z"
+    }
+  ],
+  "feedbacks": [
+    {
+      "title": "Live Alert: Gmail sync credentials rejected on secondary account",
+      "content": "User report: \"Gmail sync credentials rejected on secondary account\". Ingested from zendesk.",
+      "source_type": "zendesk",
+      "customer_name": "Evelyn Vance",
+      "customer_email": "evelynvance@livefeedback.com",
+      "sentiment": "negative",
+      "sentiment_score": -0.7,
+      "severity": "high",
+      "status": "new",
+      "cluster_id": "cluster-1",
+      "feature_tag": "General",
+      "id": "feedback-102",
+      "created_at": "2026-06-15T09:30:49.987426Z"
+    },
+    {
+      "title": "Live Alert: Stripe payment failed on mobile client safari",
+      "content": "User report: \"Stripe payment failed on mobile client safari\". Ingested from hubspot.",
+      "source_type": "hubspot",
+      "customer_name": "Evelyn Vance",
+      "customer_email": "evelynvance@livefeedback.com",
+      "sentiment": "negative",
+      "sentiment_score": -0.7,
+      "severity": "high",
+      "status": "new",
+      "cluster_id": "cluster-1",
+      "feature_tag": "Billing",
+      "id": "feedback-101",
+      "created_at": "2026-06-15T07:03:51.307779Z"
+    },
+    {
+      "id": "feedback-1",
+      "title": "Subscription renew failing with error code 402",
+      "content": "I've been trying to renew our corporate plan for the last 3 days using our corporate Visa. The checkout page keeps spinning and eventually throws a Stripe timeout error code 402. We need this sorted ASAP as our team is locked out of dashboard controls.",
+      "source_type": "gmail",
+      "customer_name": "Clara Vance",
+      "customer_email": "clara.v@company.com",
+      "sentiment": "negative",
+      "sentiment_score": -0.8,
+      "severity": "critical",
+      "status": "new",
+      "cluster_id": "cluster-1",
+      "feature_tag": "Billing",
+      "created_at": "2026-06-14T18:21:21.561507Z"
+    },
+    {
+      "id": "feedback-2",
+      "title": "Onboarding flow is incredibly confusing",
+      "content": "Just signed up for Revoxa and I'm totally lost. The workspace invite email was expired when my developer clicked it. Then we couldn't figure out how to import the CSV file because the template page kept returning a 500 server error. Documentation is sparse.",
+      "source_type": "zendesk",
+      "customer_name": "Mark Harrison",
+      "customer_email": "mharrison@techcorp.io",
+      "sentiment": "negative",
+      "sentiment_score": -0.8,
+      "severity": "high",
+      "status": "processed",
+      "cluster_id": "cluster-2",
+      "feature_tag": "Onboarding",
+      "created_at": "2026-06-14T16:51:21.561507Z"
+    },
+    {
+      "id": "feedback-3",
+      "title": "Slack notifications lag by 30 mins",
+      "content": "The webhook integrations are useful but we noticed that Slack alerts for new customer issues are delayed by 25 to 30 minutes. Real-time updates should actually be real-time, otherwise we check the dashboard manually anyway.",
+      "source_type": "slack",
+      "customer_name": "Dev Team",
+      "customer_email": "devops@chatlabs.com",
+      "sentiment": "neutral",
+      "sentiment_score": 0.05,
+      "severity": "medium",
+      "status": "ignored",
+      "cluster_id": "cluster-3",
+      "feature_tag": "Integrations",
+      "created_at": "2026-06-14T15:21:21.561507Z"
+    },
+    {
+      "id": "feedback-99",
+      "title": "Feedback report regarding Semantic Cluster Group #49",
+      "content": "Feedback comment submitted by client. The main theme is related to semantic cluster group #49 and they would like this resolved quickly. Interface performance is crucial.",
+      "source_type": "intercom",
+      "customer_name": "Customer 99",
+      "customer_email": "customer99@domain.com",
+      "sentiment": "neutral",
+      "sentiment_score": 0.05,
+      "severity": "high",
+      "status": "ignored",
+      "cluster_id": "cluster-49",
+      "feature_tag": "Integrations",
+      "created_at": "2026-06-08T15:21:21.561507Z"
+    },
+    {
+      "id": "feedback-100",
+      "title": "Feedback report regarding Semantic Cluster Group #50",
+      "content": "Feedback comment submitted by client. The main theme is related to semantic cluster group #50 and they would like this resolved quickly. Interface performance is crucial.",
+      "source_type": "gmail",
+      "customer_name": "Customer 100",
+      "customer_email": "customer100@domain.com",
+      "sentiment": "positive",
+      "sentiment_score": 0.75,
+      "severity": "critical",
+      "status": "new",
+      "cluster_id": "cluster-50",
+      "feature_tag": "Reporting",
+      "created_at": "2026-06-08T13:51:21.561507Z"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cluster-1",
+      "name": "Stripe Checkout Gateway Timeout",
+      "summary": "Automatically clustered feedback items referencing stripe checkout gateway timeout. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -0.56,
+      "trend": "stable",
+      "sentiment_score": -0.44,
+      "total_feedback_count": 134,
+      "last_updated": "2026-06-14T18:21:21.561507Z"
+    },
+    {
+      "id": "cluster-2",
+      "name": "Workspace Invitation Links Expiring",
+      "summary": "Automatically clustered feedback items referencing workspace invitation links expiring. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 30.45,
+      "trend": "rising",
+      "sentiment_score": -0.66,
+      "total_feedback_count": 133,
+      "last_updated": "2026-06-14T16:21:21.561507Z"
+    },
+    {
+      "id": "cluster-3",
+      "name": "Slack Notification Webhook Delay",
+      "summary": "Automatically clustered feedback items referencing slack notification webhook delay. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -0.72,
+      "trend": "stable",
+      "sentiment_score": -0.43,
+      "total_feedback_count": 174,
+      "last_updated": "2026-06-14T14:21:21.561507Z"
+    },
+    {
+      "id": "cluster-4",
+      "name": "CSV feedback parsing failure",
+      "summary": "Automatically clustered feedback items referencing csv feedback parsing failure. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -0.6,
+      "trend": "stable",
+      "sentiment_score": 0.24,
+      "total_feedback_count": 197,
+      "last_updated": "2026-06-14T12:21:21.561507Z"
+    },
+    {
+      "id": "cluster-5",
+      "name": "Gmail Authentication JWT Expiry",
+      "summary": "Automatically clustered feedback items referencing gmail authentication jwt expiry. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 18.88,
+      "trend": "rising",
+      "sentiment_score": -0.35,
+      "total_feedback_count": 189,
+      "last_updated": "2026-06-14T10:21:21.561507Z"
+    },
+    {
+      "id": "cluster-6",
+      "name": "Slow Recharts Dashboard rendering",
+      "summary": "Automatically clustered feedback items referencing slow recharts dashboard rendering. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": -17.07,
+      "trend": "declining",
+      "sentiment_score": -0.12,
+      "total_feedback_count": 120,
+      "last_updated": "2026-06-14T08:21:21.561507Z"
+    },
+    {
+      "id": "cluster-7",
+      "name": "Dark Mode visibility contrast",
+      "summary": "Automatically clustered feedback items referencing dark mode visibility contrast. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 7.0,
+      "trend": "stable",
+      "sentiment_score": -0.26,
+      "total_feedback_count": 155,
+      "last_updated": "2026-06-14T06:21:21.561507Z"
+    },
+    {
+      "id": "cluster-8",
+      "name": "Zendesk ticket synchronization lag",
+      "summary": "Automatically clustered feedback items referencing zendesk ticket synchronization lag. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -8.55,
+      "trend": "stable",
+      "sentiment_score": -0.25,
+      "total_feedback_count": 131,
+      "last_updated": "2026-06-14T04:21:21.561507Z"
+    },
+    {
+      "id": "cluster-9",
+      "name": "Discord Bot message scraping limit",
+      "summary": "Automatically clustered feedback items referencing discord bot message scraping limit. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": 36.32,
+      "trend": "rising",
+      "sentiment_score": 0.06,
+      "total_feedback_count": 153,
+      "last_updated": "2026-06-14T02:21:21.561507Z"
+    },
+    {
+      "id": "cluster-10",
+      "name": "Reddit subreddit ingestion throttle",
+      "summary": "Automatically clustered feedback items referencing reddit subreddit ingestion throttle. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -1.77,
+      "trend": "stable",
+      "sentiment_score": 0.21,
+      "total_feedback_count": 168,
+      "last_updated": "2026-06-14T00:21:21.561507Z"
+    },
+    {
+      "id": "cluster-11",
+      "name": "Billing currency mismatch",
+      "summary": "Automatically clustered feedback items referencing billing currency mismatch. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 25.98,
+      "trend": "rising",
+      "sentiment_score": -0.73,
+      "total_feedback_count": 166,
+      "last_updated": "2026-06-13T22:21:21.561507Z"
+    },
+    {
+      "id": "cluster-12",
+      "name": "PDF Executive report downloads failing",
+      "summary": "Automatically clustered feedback items referencing pdf executive report downloads failing. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 34.79,
+      "trend": "rising",
+      "sentiment_score": 0.57,
+      "total_feedback_count": 149,
+      "last_updated": "2026-06-13T20:21:21.561507Z"
+    },
+    {
+      "id": "cluster-13",
+      "name": "Hubspot integration CRM mapping error",
+      "summary": "Automatically clustered feedback items referencing hubspot integration crm mapping error. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 17.11,
+      "trend": "rising",
+      "sentiment_score": 0.53,
+      "total_feedback_count": 132,
+      "last_updated": "2026-06-13T18:21:21.561507Z"
+    },
+    {
+      "id": "cluster-14",
+      "name": "Intercom chat transcript loss",
+      "summary": "Automatically clustered feedback items referencing intercom chat transcript loss. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -8.33,
+      "trend": "stable",
+      "sentiment_score": -0.37,
+      "total_feedback_count": 140,
+      "last_updated": "2026-06-13T16:21:21.561507Z"
+    },
+    {
+      "id": "cluster-15",
+      "name": "API rate limits on free tier",
+      "summary": "Automatically clustered feedback items referencing api rate limits on free tier. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -13.71,
+      "trend": "declining",
+      "sentiment_score": 0.37,
+      "total_feedback_count": 129,
+      "last_updated": "2026-06-13T14:21:21.561507Z"
+    },
+    {
+      "id": "cluster-16",
+      "name": "Android app login fingerprint crash",
+      "summary": "Automatically clustered feedback items referencing android app login fingerprint crash. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -10.4,
+      "trend": "declining",
+      "sentiment_score": 0.68,
+      "total_feedback_count": 140,
+      "last_updated": "2026-06-13T12:21:21.561507Z"
+    },
+    {
+      "id": "cluster-17",
+      "name": "iOS push notifications silent fail",
+      "summary": "Automatically clustered feedback items referencing ios push notifications silent fail. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -4.94,
+      "trend": "stable",
+      "sentiment_score": 0.43,
+      "total_feedback_count": 191,
+      "last_updated": "2026-06-13T10:21:21.561507Z"
+    },
+    {
+      "id": "cluster-18",
+      "name": "Member permissions role sync lag",
+      "summary": "Automatically clustered feedback items referencing member permissions role sync lag. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -5.15,
+      "trend": "stable",
+      "sentiment_score": -0.3,
+      "total_feedback_count": 127,
+      "last_updated": "2026-06-13T08:21:21.561507Z"
+    },
+    {
+      "id": "cluster-19",
+      "name": "Two-factor auth SMS code delay",
+      "summary": "Automatically clustered feedback items referencing two-factor auth sms code delay. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": 2.98,
+      "trend": "stable",
+      "sentiment_score": 0.11,
+      "total_feedback_count": 154,
+      "last_updated": "2026-06-13T06:21:21.561507Z"
+    },
+    {
+      "id": "cluster-20",
+      "name": "Audit logs download structure error",
+      "summary": "Automatically clustered feedback items referencing audit logs download structure error. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 9.57,
+      "trend": "stable",
+      "sentiment_score": 0.62,
+      "total_feedback_count": 160,
+      "last_updated": "2026-06-13T04:21:21.561507Z"
+    },
+    {
+      "id": "cluster-21",
+      "name": "Semantic Cluster Group #21",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #21. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -3.21,
+      "trend": "stable",
+      "sentiment_score": 0.39,
+      "total_feedback_count": 39,
+      "last_updated": "2026-06-13T02:21:21.561507Z"
+    },
+    {
+      "id": "cluster-22",
+      "name": "Semantic Cluster Group #22",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #22. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 11.82,
+      "trend": "stable",
+      "sentiment_score": 0.64,
+      "total_feedback_count": 44,
+      "last_updated": "2026-06-13T00:21:21.561507Z"
+    },
+    {
+      "id": "cluster-23",
+      "name": "Semantic Cluster Group #23",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #23. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 16.29,
+      "trend": "rising",
+      "sentiment_score": -0.58,
+      "total_feedback_count": 35,
+      "last_updated": "2026-06-12T22:21:21.561507Z"
+    },
+    {
+      "id": "cluster-24",
+      "name": "Semantic Cluster Group #24",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #24. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -2.05,
+      "trend": "stable",
+      "sentiment_score": -0.62,
+      "total_feedback_count": 41,
+      "last_updated": "2026-06-12T20:21:21.561507Z"
+    },
+    {
+      "id": "cluster-25",
+      "name": "Semantic Cluster Group #25",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #25. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 35.64,
+      "trend": "rising",
+      "sentiment_score": -0.7,
+      "total_feedback_count": 20,
+      "last_updated": "2026-06-12T18:21:21.561507Z"
+    },
+    {
+      "id": "cluster-26",
+      "name": "Semantic Cluster Group #26",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #26. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 26.81,
+      "trend": "rising",
+      "sentiment_score": -0.4,
+      "total_feedback_count": 34,
+      "last_updated": "2026-06-12T16:21:21.561507Z"
+    },
+    {
+      "id": "cluster-27",
+      "name": "Semantic Cluster Group #27",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #27. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -19.37,
+      "trend": "declining",
+      "sentiment_score": 0.35,
+      "total_feedback_count": 45,
+      "last_updated": "2026-06-12T14:21:21.561507Z"
+    },
+    {
+      "id": "cluster-28",
+      "name": "Semantic Cluster Group #28",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #28. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 33.79,
+      "trend": "rising",
+      "sentiment_score": -0.26,
+      "total_feedback_count": 44,
+      "last_updated": "2026-06-12T12:21:21.561507Z"
+    },
+    {
+      "id": "cluster-29",
+      "name": "Semantic Cluster Group #29",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #29. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 19.56,
+      "trend": "rising",
+      "sentiment_score": 0.73,
+      "total_feedback_count": 28,
+      "last_updated": "2026-06-12T10:21:21.561507Z"
+    },
+    {
+      "id": "cluster-30",
+      "name": "Semantic Cluster Group #30",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #30. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": 43.73,
+      "trend": "rising",
+      "sentiment_score": 0.01,
+      "total_feedback_count": 26,
+      "last_updated": "2026-06-12T08:21:21.561507Z"
+    },
+    {
+      "id": "cluster-31",
+      "name": "Semantic Cluster Group #31",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #31. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -19.59,
+      "trend": "declining",
+      "sentiment_score": 0.22,
+      "total_feedback_count": 16,
+      "last_updated": "2026-06-12T06:21:21.561507Z"
+    },
+    {
+      "id": "cluster-32",
+      "name": "Semantic Cluster Group #32",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #32. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -4.48,
+      "trend": "stable",
+      "sentiment_score": -0.54,
+      "total_feedback_count": 48,
+      "last_updated": "2026-06-12T04:21:21.561507Z"
+    },
+    {
+      "id": "cluster-33",
+      "name": "Semantic Cluster Group #33",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #33. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": 41.33,
+      "trend": "rising",
+      "sentiment_score": -0.02,
+      "total_feedback_count": 43,
+      "last_updated": "2026-06-12T02:21:21.561507Z"
+    },
+    {
+      "id": "cluster-34",
+      "name": "Semantic Cluster Group #34",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #34. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 41.81,
+      "trend": "rising",
+      "sentiment_score": 0.53,
+      "total_feedback_count": 17,
+      "last_updated": "2026-06-12T00:21:21.561507Z"
+    },
+    {
+      "id": "cluster-35",
+      "name": "Semantic Cluster Group #35",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #35. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": -5.39,
+      "trend": "stable",
+      "sentiment_score": 0.11,
+      "total_feedback_count": 29,
+      "last_updated": "2026-06-11T22:21:21.561507Z"
+    },
+    {
+      "id": "cluster-36",
+      "name": "Semantic Cluster Group #36",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #36. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 3.85,
+      "trend": "stable",
+      "sentiment_score": -0.69,
+      "total_feedback_count": 15,
+      "last_updated": "2026-06-11T20:21:21.561507Z"
+    },
+    {
+      "id": "cluster-37",
+      "name": "Semantic Cluster Group #37",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #37. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": -17.23,
+      "trend": "declining",
+      "sentiment_score": -0.04,
+      "total_feedback_count": 44,
+      "last_updated": "2026-06-11T18:21:21.561507Z"
+    },
+    {
+      "id": "cluster-38",
+      "name": "Semantic Cluster Group #38",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #38. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": 7.43,
+      "trend": "stable",
+      "sentiment_score": 0.17,
+      "total_feedback_count": 45,
+      "last_updated": "2026-06-11T16:21:21.561507Z"
+    },
+    {
+      "id": "cluster-39",
+      "name": "Semantic Cluster Group #39",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #39. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 41.8,
+      "trend": "rising",
+      "sentiment_score": 0.3,
+      "total_feedback_count": 23,
+      "last_updated": "2026-06-11T14:21:21.561507Z"
+    },
+    {
+      "id": "cluster-40",
+      "name": "Semantic Cluster Group #40",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #40. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": 17.95,
+      "trend": "rising",
+      "sentiment_score": -0.2,
+      "total_feedback_count": 29,
+      "last_updated": "2026-06-11T12:21:21.561507Z"
+    },
+    {
+      "id": "cluster-41",
+      "name": "Semantic Cluster Group #41",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #41. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -10.16,
+      "trend": "declining",
+      "sentiment_score": -0.7,
+      "total_feedback_count": 43,
+      "last_updated": "2026-06-11T10:21:21.561507Z"
+    },
+    {
+      "id": "cluster-42",
+      "name": "Semantic Cluster Group #42",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #42. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -13.24,
+      "trend": "declining",
+      "sentiment_score": -0.45,
+      "total_feedback_count": 11,
+      "last_updated": "2026-06-11T08:21:21.561507Z"
+    },
+    {
+      "id": "cluster-43",
+      "name": "Semantic Cluster Group #43",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #43. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -15.93,
+      "trend": "declining",
+      "sentiment_score": -0.69,
+      "total_feedback_count": 14,
+      "last_updated": "2026-06-11T06:21:21.561507Z"
+    },
+    {
+      "id": "cluster-44",
+      "name": "Semantic Cluster Group #44",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #44. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": -19.34,
+      "trend": "declining",
+      "sentiment_score": -0.42,
+      "total_feedback_count": 12,
+      "last_updated": "2026-06-11T04:21:21.561507Z"
+    },
+    {
+      "id": "cluster-45",
+      "name": "Semantic Cluster Group #45",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #45. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": -4.82,
+      "trend": "stable",
+      "sentiment_score": 0.7,
+      "total_feedback_count": 41,
+      "last_updated": "2026-06-11T02:21:21.561507Z"
+    },
+    {
+      "id": "cluster-46",
+      "name": "Semantic Cluster Group #46",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #46. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": -12.96,
+      "trend": "declining",
+      "sentiment_score": -0.04,
+      "total_feedback_count": 46,
+      "last_updated": "2026-06-11T00:21:21.561507Z"
+    },
+    {
+      "id": "cluster-47",
+      "name": "Semantic Cluster Group #47",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #47. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": -4.28,
+      "trend": "stable",
+      "sentiment_score": -0.11,
+      "total_feedback_count": 36,
+      "last_updated": "2026-06-10T22:21:21.561507Z"
+    },
+    {
+      "id": "cluster-48",
+      "name": "Semantic Cluster Group #48",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #48. Core sentiment shows users are frustrated regarding this behavior.",
+      "growth_rate": 18.5,
+      "trend": "rising",
+      "sentiment_score": -0.71,
+      "total_feedback_count": 37,
+      "last_updated": "2026-06-10T20:21:21.561507Z"
+    },
+    {
+      "id": "cluster-49",
+      "name": "Semantic Cluster Group #49",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #49. Core sentiment shows users are pleased regarding this behavior.",
+      "growth_rate": 2.73,
+      "trend": "stable",
+      "sentiment_score": 0.48,
+      "total_feedback_count": 16,
+      "last_updated": "2026-06-10T18:21:21.561507Z"
+    },
+    {
+      "id": "cluster-50",
+      "name": "Semantic Cluster Group #50",
+      "summary": "Automatically clustered feedback items referencing semantic cluster group #50. Core sentiment shows users are indifferent regarding this behavior.",
+      "growth_rate": -5.59,
+      "trend": "stable",
+      "sentiment_score": -0.08,
+      "total_feedback_count": 16,
+      "last_updated": "2026-06-10T16:21:21.561507Z"
+    }
+  ],
+  "features": [
+    {
+      "id": "feature-1",
+      "name": "Real-time Slack Alerts Integration",
+      "summary": "Suggested product enhancement: real-time slack alerts integration. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 308,
+      "growth_rate": 11.01,
+      "priority": "Critical",
+      "revenue_impact": 34804,
+      "status": "Backlog",
+      "created_at": "2026-06-14T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-2",
+      "name": "Advanced pgvector Semantic Search Filter",
+      "summary": "Suggested product enhancement: advanced pgvector semantic search filter. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 313,
+      "growth_rate": 48.48,
+      "priority": "High",
+      "revenue_impact": 19406,
+      "status": "Backlog",
+      "created_at": "2026-06-12T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-3",
+      "name": "Multi-workspace Admin Console",
+      "summary": "Suggested product enhancement: multi-workspace admin console. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 223,
+      "growth_rate": 55.58,
+      "priority": "High",
+      "revenue_impact": 20516,
+      "status": "Completed",
+      "created_at": "2026-06-09T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-4",
+      "name": "Comprehensive PDF/CSV Report Scheduler",
+      "summary": "Suggested product enhancement: comprehensive pdf/csv report scheduler. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 324,
+      "growth_rate": 28.88,
+      "priority": "Critical",
+      "revenue_impact": 21060,
+      "status": "Planned",
+      "created_at": "2026-06-07T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-5",
+      "name": "HubSpot Two-way CRM Contact Sync",
+      "summary": "Suggested product enhancement: hubspot two-way crm contact sync. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 297,
+      "growth_rate": 0.13,
+      "priority": "Critical",
+      "revenue_impact": 34749,
+      "status": "Completed",
+      "created_at": "2026-06-04T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-6",
+      "name": "Direct Zendesk Ticket AI Auto-Responder",
+      "summary": "Suggested product enhancement: direct zendesk ticket ai auto-responder. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 273,
+      "growth_rate": 25.38,
+      "priority": "Critical",
+      "revenue_impact": 24297,
+      "status": "Planned",
+      "created_at": "2026-06-02T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-7",
+      "name": "Mobile Dashboard (iOS & Android Native)",
+      "summary": "Suggested product enhancement: mobile dashboard (ios & android native). Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 275,
+      "growth_rate": 13.06,
+      "priority": "High",
+      "revenue_impact": 54450,
+      "status": "Backlog",
+      "created_at": "2026-05-30T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-8",
+      "name": "Full Dark Mode Toggle Options",
+      "summary": "Suggested product enhancement: full dark mode toggle options. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 280,
+      "growth_rate": 3.43,
+      "priority": "Critical",
+      "revenue_impact": 49840,
+      "status": "Planned",
+      "created_at": "2026-05-28T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-9",
+      "name": "Interactive Memory Graph Node Editing",
+      "summary": "Suggested product enhancement: interactive memory graph node editing. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 214,
+      "growth_rate": 57.65,
+      "priority": "High",
+      "revenue_impact": 20758,
+      "status": "Backlog",
+      "created_at": "2026-05-25T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-10",
+      "name": "API Key Generation & Rate Limiting Dashboard",
+      "summary": "Suggested product enhancement: api key generation & rate limiting dashboard. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 217,
+      "growth_rate": 40.51,
+      "priority": "High",
+      "revenue_impact": 33201,
+      "status": "Backlog",
+      "created_at": "2026-05-23T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-11",
+      "name": "Product Feature Enhancement Option #11",
+      "summary": "Suggested product enhancement: product feature enhancement option #11. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 82,
+      "growth_rate": 14.77,
+      "priority": "High",
+      "revenue_impact": 4920,
+      "status": "Backlog",
+      "created_at": "2026-05-20T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-12",
+      "name": "Product Feature Enhancement Option #12",
+      "summary": "Suggested product enhancement: product feature enhancement option #12. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 63,
+      "growth_rate": 39.44,
+      "priority": "High",
+      "revenue_impact": 11529,
+      "status": "In Progress",
+      "created_at": "2026-05-18T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-13",
+      "name": "Product Feature Enhancement Option #13",
+      "summary": "Suggested product enhancement: product feature enhancement option #13. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 43,
+      "growth_rate": 12.26,
+      "priority": "High",
+      "revenue_impact": 5590,
+      "status": "Planned",
+      "created_at": "2026-05-15T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-14",
+      "name": "Product Feature Enhancement Option #14",
+      "summary": "Suggested product enhancement: product feature enhancement option #14. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 43,
+      "growth_rate": 23.75,
+      "priority": "High",
+      "revenue_impact": 5418,
+      "status": "Completed",
+      "created_at": "2026-05-13T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-15",
+      "name": "Product Feature Enhancement Option #15",
+      "summary": "Suggested product enhancement: product feature enhancement option #15. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 50,
+      "growth_rate": 55.74,
+      "priority": "Low",
+      "revenue_impact": 2600,
+      "status": "Completed",
+      "created_at": "2026-05-10T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-16",
+      "name": "Product Feature Enhancement Option #16",
+      "summary": "Suggested product enhancement: product feature enhancement option #16. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 89,
+      "growth_rate": 59.91,
+      "priority": "Low",
+      "revenue_impact": 6052,
+      "status": "Planned",
+      "created_at": "2026-05-08T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-17",
+      "name": "Product Feature Enhancement Option #17",
+      "summary": "Suggested product enhancement: product feature enhancement option #17. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 74,
+      "growth_rate": 15.91,
+      "priority": "Medium",
+      "revenue_impact": 4958,
+      "status": "Planned",
+      "created_at": "2026-05-05T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-18",
+      "name": "Product Feature Enhancement Option #18",
+      "summary": "Suggested product enhancement: product feature enhancement option #18. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 57,
+      "growth_rate": 17.1,
+      "priority": "Medium",
+      "revenue_impact": 10773,
+      "status": "In Progress",
+      "created_at": "2026-05-03T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-19",
+      "name": "Product Feature Enhancement Option #19",
+      "summary": "Suggested product enhancement: product feature enhancement option #19. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 88,
+      "growth_rate": 59.03,
+      "priority": "High",
+      "revenue_impact": 16280,
+      "status": "Backlog",
+      "created_at": "2026-04-30T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-20",
+      "name": "Product Feature Enhancement Option #20",
+      "summary": "Suggested product enhancement: product feature enhancement option #20. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 95,
+      "growth_rate": 49.03,
+      "priority": "Medium",
+      "revenue_impact": 7220,
+      "status": "Planned",
+      "created_at": "2026-04-28T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-21",
+      "name": "Product Feature Enhancement Option #21",
+      "summary": "Suggested product enhancement: product feature enhancement option #21. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 43,
+      "growth_rate": 6.93,
+      "priority": "Low",
+      "revenue_impact": 8213,
+      "status": "Planned",
+      "created_at": "2026-04-25T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-22",
+      "name": "Product Feature Enhancement Option #22",
+      "summary": "Suggested product enhancement: product feature enhancement option #22. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 44,
+      "growth_rate": 16.91,
+      "priority": "Low",
+      "revenue_impact": 6028,
+      "status": "Planned",
+      "created_at": "2026-04-23T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-23",
+      "name": "Product Feature Enhancement Option #23",
+      "summary": "Suggested product enhancement: product feature enhancement option #23. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 97,
+      "growth_rate": 38.05,
+      "priority": "Medium",
+      "revenue_impact": 17363,
+      "status": "Completed",
+      "created_at": "2026-04-20T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-24",
+      "name": "Product Feature Enhancement Option #24",
+      "summary": "Suggested product enhancement: product feature enhancement option #24. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 42,
+      "growth_rate": 54.32,
+      "priority": "Low",
+      "revenue_impact": 3066,
+      "status": "Completed",
+      "created_at": "2026-04-18T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-25",
+      "name": "Product Feature Enhancement Option #25",
+      "summary": "Suggested product enhancement: product feature enhancement option #25. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 45,
+      "growth_rate": 2.65,
+      "priority": "Medium",
+      "revenue_impact": 3735,
+      "status": "In Progress",
+      "created_at": "2026-04-15T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-26",
+      "name": "Product Feature Enhancement Option #26",
+      "summary": "Suggested product enhancement: product feature enhancement option #26. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 30,
+      "growth_rate": 44.47,
+      "priority": "High",
+      "revenue_impact": 4770,
+      "status": "Backlog",
+      "created_at": "2026-04-13T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-27",
+      "name": "Product Feature Enhancement Option #27",
+      "summary": "Suggested product enhancement: product feature enhancement option #27. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 24,
+      "growth_rate": 4.51,
+      "priority": "High",
+      "revenue_impact": 2112,
+      "status": "Backlog",
+      "created_at": "2026-04-10T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-28",
+      "name": "Product Feature Enhancement Option #28",
+      "summary": "Suggested product enhancement: product feature enhancement option #28. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 57,
+      "growth_rate": 34.95,
+      "priority": "Low",
+      "revenue_impact": 9120,
+      "status": "Planned",
+      "created_at": "2026-04-08T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-29",
+      "name": "Product Feature Enhancement Option #29",
+      "summary": "Suggested product enhancement: product feature enhancement option #29. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 15,
+      "growth_rate": 18.5,
+      "priority": "Low",
+      "revenue_impact": 2115,
+      "status": "Planned",
+      "created_at": "2026-04-05T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-30",
+      "name": "Product Feature Enhancement Option #30",
+      "summary": "Suggested product enhancement: product feature enhancement option #30. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 97,
+      "growth_rate": 14.97,
+      "priority": "Low",
+      "revenue_impact": 13580,
+      "status": "Completed",
+      "created_at": "2026-04-03T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-31",
+      "name": "Product Feature Enhancement Option #31",
+      "summary": "Suggested product enhancement: product feature enhancement option #31. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 89,
+      "growth_rate": 44.97,
+      "priority": "Low",
+      "revenue_impact": 8099,
+      "status": "Planned",
+      "created_at": "2026-03-31T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-32",
+      "name": "Product Feature Enhancement Option #32",
+      "summary": "Suggested product enhancement: product feature enhancement option #32. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 62,
+      "growth_rate": 1.49,
+      "priority": "High",
+      "revenue_impact": 8370,
+      "status": "Completed",
+      "created_at": "2026-03-29T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-33",
+      "name": "Product Feature Enhancement Option #33",
+      "summary": "Suggested product enhancement: product feature enhancement option #33. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 95,
+      "growth_rate": 51.84,
+      "priority": "Low",
+      "revenue_impact": 11210,
+      "status": "Planned",
+      "created_at": "2026-03-26T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-34",
+      "name": "Product Feature Enhancement Option #34",
+      "summary": "Suggested product enhancement: product feature enhancement option #34. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 99,
+      "growth_rate": 6.49,
+      "priority": "Low",
+      "revenue_impact": 16830,
+      "status": "Planned",
+      "created_at": "2026-03-24T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-35",
+      "name": "Product Feature Enhancement Option #35",
+      "summary": "Suggested product enhancement: product feature enhancement option #35. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 35,
+      "growth_rate": 49.0,
+      "priority": "Medium",
+      "revenue_impact": 4865,
+      "status": "In Progress",
+      "created_at": "2026-03-21T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-36",
+      "name": "Product Feature Enhancement Option #36",
+      "summary": "Suggested product enhancement: product feature enhancement option #36. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 39,
+      "growth_rate": 13.38,
+      "priority": "High",
+      "revenue_impact": 3861,
+      "status": "Completed",
+      "created_at": "2026-03-19T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-37",
+      "name": "Product Feature Enhancement Option #37",
+      "summary": "Suggested product enhancement: product feature enhancement option #37. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 52,
+      "growth_rate": 16.72,
+      "priority": "Low",
+      "revenue_impact": 6292,
+      "status": "In Progress",
+      "created_at": "2026-03-16T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-38",
+      "name": "Product Feature Enhancement Option #38",
+      "summary": "Suggested product enhancement: product feature enhancement option #38. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 92,
+      "growth_rate": 30.56,
+      "priority": "High",
+      "revenue_impact": 17204,
+      "status": "In Progress",
+      "created_at": "2026-03-14T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-39",
+      "name": "Product Feature Enhancement Option #39",
+      "summary": "Suggested product enhancement: product feature enhancement option #39. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 13,
+      "growth_rate": 6.92,
+      "priority": "Medium",
+      "revenue_impact": 1235,
+      "status": "In Progress",
+      "created_at": "2026-03-11T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-40",
+      "name": "Product Feature Enhancement Option #40",
+      "summary": "Suggested product enhancement: product feature enhancement option #40. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 14,
+      "growth_rate": 6.5,
+      "priority": "Medium",
+      "revenue_impact": 1932,
+      "status": "In Progress",
+      "created_at": "2026-03-09T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-41",
+      "name": "Product Feature Enhancement Option #41",
+      "summary": "Suggested product enhancement: product feature enhancement option #41. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 65,
+      "growth_rate": 36.37,
+      "priority": "High",
+      "revenue_impact": 5135,
+      "status": "Completed",
+      "created_at": "2026-03-06T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-42",
+      "name": "Product Feature Enhancement Option #42",
+      "summary": "Suggested product enhancement: product feature enhancement option #42. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 83,
+      "growth_rate": 11.4,
+      "priority": "Low",
+      "revenue_impact": 13363,
+      "status": "Backlog",
+      "created_at": "2026-03-04T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-43",
+      "name": "Product Feature Enhancement Option #43",
+      "summary": "Suggested product enhancement: product feature enhancement option #43. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 76,
+      "growth_rate": 55.53,
+      "priority": "High",
+      "revenue_impact": 7600,
+      "status": "In Progress",
+      "created_at": "2026-03-01T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-44",
+      "name": "Product Feature Enhancement Option #44",
+      "summary": "Suggested product enhancement: product feature enhancement option #44. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 65,
+      "growth_rate": 4.2,
+      "priority": "High",
+      "revenue_impact": 8710,
+      "status": "In Progress",
+      "created_at": "2026-02-27T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-45",
+      "name": "Product Feature Enhancement Option #45",
+      "summary": "Suggested product enhancement: product feature enhancement option #45. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 94,
+      "growth_rate": 50.88,
+      "priority": "High",
+      "revenue_impact": 11844,
+      "status": "In Progress",
+      "created_at": "2026-02-24T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-46",
+      "name": "Product Feature Enhancement Option #46",
+      "summary": "Suggested product enhancement: product feature enhancement option #46. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 95,
+      "growth_rate": 24.5,
+      "priority": "Medium",
+      "revenue_impact": 11875,
+      "status": "Planned",
+      "created_at": "2026-02-22T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-47",
+      "name": "Product Feature Enhancement Option #47",
+      "summary": "Suggested product enhancement: product feature enhancement option #47. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 34,
+      "growth_rate": 25.23,
+      "priority": "Medium",
+      "revenue_impact": 3196,
+      "status": "In Progress",
+      "created_at": "2026-02-19T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-48",
+      "name": "Product Feature Enhancement Option #48",
+      "summary": "Suggested product enhancement: product feature enhancement option #48. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 61,
+      "growth_rate": 32.88,
+      "priority": "Low",
+      "revenue_impact": 7747,
+      "status": "In Progress",
+      "created_at": "2026-02-17T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-49",
+      "name": "Product Feature Enhancement Option #49",
+      "summary": "Suggested product enhancement: product feature enhancement option #49. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 36,
+      "growth_rate": 25.79,
+      "priority": "High",
+      "revenue_impact": 4752,
+      "status": "Completed",
+      "created_at": "2026-02-14T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-50",
+      "name": "Product Feature Enhancement Option #50",
+      "summary": "Suggested product enhancement: product feature enhancement option #50. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 66,
+      "growth_rate": 26.53,
+      "priority": "Low",
+      "revenue_impact": 11880,
+      "status": "Completed",
+      "created_at": "2026-02-12T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-51",
+      "name": "Product Feature Enhancement Option #51",
+      "summary": "Suggested product enhancement: product feature enhancement option #51. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 31,
+      "growth_rate": 39.53,
+      "priority": "Medium",
+      "revenue_impact": 5611,
+      "status": "In Progress",
+      "created_at": "2026-02-09T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-52",
+      "name": "Product Feature Enhancement Option #52",
+      "summary": "Suggested product enhancement: product feature enhancement option #52. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 21,
+      "growth_rate": 49.11,
+      "priority": "Low",
+      "revenue_impact": 2709,
+      "status": "Planned",
+      "created_at": "2026-02-07T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-53",
+      "name": "Product Feature Enhancement Option #53",
+      "summary": "Suggested product enhancement: product feature enhancement option #53. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 35,
+      "growth_rate": 8.84,
+      "priority": "Low",
+      "revenue_impact": 3920,
+      "status": "Completed",
+      "created_at": "2026-02-04T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-54",
+      "name": "Product Feature Enhancement Option #54",
+      "summary": "Suggested product enhancement: product feature enhancement option #54. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 88,
+      "growth_rate": 50.98,
+      "priority": "Low",
+      "revenue_impact": 14608,
+      "status": "Completed",
+      "created_at": "2026-02-02T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-55",
+      "name": "Product Feature Enhancement Option #55",
+      "summary": "Suggested product enhancement: product feature enhancement option #55. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 90,
+      "growth_rate": 34.54,
+      "priority": "High",
+      "revenue_impact": 13320,
+      "status": "Completed",
+      "created_at": "2026-01-30T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-56",
+      "name": "Product Feature Enhancement Option #56",
+      "summary": "Suggested product enhancement: product feature enhancement option #56. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 61,
+      "growth_rate": 14.64,
+      "priority": "High",
+      "revenue_impact": 3111,
+      "status": "Backlog",
+      "created_at": "2026-01-28T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-57",
+      "name": "Product Feature Enhancement Option #57",
+      "summary": "Suggested product enhancement: product feature enhancement option #57. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 64,
+      "growth_rate": 13.13,
+      "priority": "High",
+      "revenue_impact": 11648,
+      "status": "Completed",
+      "created_at": "2026-01-25T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-58",
+      "name": "Product Feature Enhancement Option #58",
+      "summary": "Suggested product enhancement: product feature enhancement option #58. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 16,
+      "growth_rate": 33.44,
+      "priority": "Low",
+      "revenue_impact": 2656,
+      "status": "Planned",
+      "created_at": "2026-01-23T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-59",
+      "name": "Product Feature Enhancement Option #59",
+      "summary": "Suggested product enhancement: product feature enhancement option #59. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 69,
+      "growth_rate": 40.05,
+      "priority": "High",
+      "revenue_impact": 9039,
+      "status": "Completed",
+      "created_at": "2026-01-20T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-60",
+      "name": "Product Feature Enhancement Option #60",
+      "summary": "Suggested product enhancement: product feature enhancement option #60. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 88,
+      "growth_rate": 48.9,
+      "priority": "High",
+      "revenue_impact": 13992,
+      "status": "Completed",
+      "created_at": "2026-01-18T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-61",
+      "name": "Product Feature Enhancement Option #61",
+      "summary": "Suggested product enhancement: product feature enhancement option #61. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 30,
+      "growth_rate": 44.62,
+      "priority": "Medium",
+      "revenue_impact": 4950,
+      "status": "In Progress",
+      "created_at": "2026-01-15T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-62",
+      "name": "Product Feature Enhancement Option #62",
+      "summary": "Suggested product enhancement: product feature enhancement option #62. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 41,
+      "growth_rate": 50.39,
+      "priority": "Medium",
+      "revenue_impact": 7503,
+      "status": "Completed",
+      "created_at": "2026-01-13T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-63",
+      "name": "Product Feature Enhancement Option #63",
+      "summary": "Suggested product enhancement: product feature enhancement option #63. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 90,
+      "growth_rate": 14.35,
+      "priority": "Medium",
+      "revenue_impact": 6210,
+      "status": "In Progress",
+      "created_at": "2026-01-10T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-64",
+      "name": "Product Feature Enhancement Option #64",
+      "summary": "Suggested product enhancement: product feature enhancement option #64. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 40,
+      "growth_rate": 16.3,
+      "priority": "Medium",
+      "revenue_impact": 7520,
+      "status": "Backlog",
+      "created_at": "2026-01-08T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-65",
+      "name": "Product Feature Enhancement Option #65",
+      "summary": "Suggested product enhancement: product feature enhancement option #65. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 27,
+      "growth_rate": 9.05,
+      "priority": "Medium",
+      "revenue_impact": 2403,
+      "status": "Planned",
+      "created_at": "2026-01-05T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-66",
+      "name": "Product Feature Enhancement Option #66",
+      "summary": "Suggested product enhancement: product feature enhancement option #66. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 18,
+      "growth_rate": 24.89,
+      "priority": "Medium",
+      "revenue_impact": 3384,
+      "status": "Completed",
+      "created_at": "2026-01-03T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-67",
+      "name": "Product Feature Enhancement Option #67",
+      "summary": "Suggested product enhancement: product feature enhancement option #67. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 63,
+      "growth_rate": 3.74,
+      "priority": "Medium",
+      "revenue_impact": 9387,
+      "status": "Backlog",
+      "created_at": "2025-12-31T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-68",
+      "name": "Product Feature Enhancement Option #68",
+      "summary": "Suggested product enhancement: product feature enhancement option #68. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 83,
+      "growth_rate": 22.82,
+      "priority": "Low",
+      "revenue_impact": 11620,
+      "status": "In Progress",
+      "created_at": "2025-12-29T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-69",
+      "name": "Product Feature Enhancement Option #69",
+      "summary": "Suggested product enhancement: product feature enhancement option #69. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 59,
+      "growth_rate": 51.21,
+      "priority": "Medium",
+      "revenue_impact": 11033,
+      "status": "Planned",
+      "created_at": "2025-12-26T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-70",
+      "name": "Product Feature Enhancement Option #70",
+      "summary": "Suggested product enhancement: product feature enhancement option #70. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 72,
+      "growth_rate": 13.17,
+      "priority": "Medium",
+      "revenue_impact": 12528,
+      "status": "Backlog",
+      "created_at": "2025-12-24T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-71",
+      "name": "Product Feature Enhancement Option #71",
+      "summary": "Suggested product enhancement: product feature enhancement option #71. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 59,
+      "growth_rate": 20.17,
+      "priority": "High",
+      "revenue_impact": 9027,
+      "status": "Planned",
+      "created_at": "2025-12-21T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-72",
+      "name": "Product Feature Enhancement Option #72",
+      "summary": "Suggested product enhancement: product feature enhancement option #72. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 69,
+      "growth_rate": 55.17,
+      "priority": "High",
+      "revenue_impact": 12834,
+      "status": "Backlog",
+      "created_at": "2025-12-19T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-73",
+      "name": "Product Feature Enhancement Option #73",
+      "summary": "Suggested product enhancement: product feature enhancement option #73. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 60,
+      "growth_rate": 35.51,
+      "priority": "High",
+      "revenue_impact": 3360,
+      "status": "Backlog",
+      "created_at": "2025-12-16T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-74",
+      "name": "Product Feature Enhancement Option #74",
+      "summary": "Suggested product enhancement: product feature enhancement option #74. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 92,
+      "growth_rate": 25.72,
+      "priority": "Medium",
+      "revenue_impact": 8832,
+      "status": "Backlog",
+      "created_at": "2025-12-14T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-75",
+      "name": "Product Feature Enhancement Option #75",
+      "summary": "Suggested product enhancement: product feature enhancement option #75. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 43,
+      "growth_rate": 22.75,
+      "priority": "Low",
+      "revenue_impact": 7138,
+      "status": "In Progress",
+      "created_at": "2025-12-11T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-76",
+      "name": "Product Feature Enhancement Option #76",
+      "summary": "Suggested product enhancement: product feature enhancement option #76. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 53,
+      "growth_rate": 45.67,
+      "priority": "Medium",
+      "revenue_impact": 6413,
+      "status": "Completed",
+      "created_at": "2025-12-09T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-77",
+      "name": "Product Feature Enhancement Option #77",
+      "summary": "Suggested product enhancement: product feature enhancement option #77. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 42,
+      "growth_rate": 50.09,
+      "priority": "Medium",
+      "revenue_impact": 2268,
+      "status": "Backlog",
+      "created_at": "2025-12-06T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-78",
+      "name": "Product Feature Enhancement Option #78",
+      "summary": "Suggested product enhancement: product feature enhancement option #78. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 54,
+      "growth_rate": 13.45,
+      "priority": "Low",
+      "revenue_impact": 3240,
+      "status": "Backlog",
+      "created_at": "2025-12-04T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-79",
+      "name": "Product Feature Enhancement Option #79",
+      "summary": "Suggested product enhancement: product feature enhancement option #79. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 41,
+      "growth_rate": 11.96,
+      "priority": "Low",
+      "revenue_impact": 3649,
+      "status": "Planned",
+      "created_at": "2025-12-01T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-80",
+      "name": "Product Feature Enhancement Option #80",
+      "summary": "Suggested product enhancement: product feature enhancement option #80. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 26,
+      "growth_rate": 28.41,
+      "priority": "Low",
+      "revenue_impact": 5044,
+      "status": "Planned",
+      "created_at": "2025-11-29T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-81",
+      "name": "Product Feature Enhancement Option #81",
+      "summary": "Suggested product enhancement: product feature enhancement option #81. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 69,
+      "growth_rate": 41.97,
+      "priority": "Medium",
+      "revenue_impact": 6348,
+      "status": "Backlog",
+      "created_at": "2025-11-26T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-82",
+      "name": "Product Feature Enhancement Option #82",
+      "summary": "Suggested product enhancement: product feature enhancement option #82. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 30,
+      "growth_rate": 57.88,
+      "priority": "Low",
+      "revenue_impact": 5940,
+      "status": "Backlog",
+      "created_at": "2025-11-24T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-83",
+      "name": "Product Feature Enhancement Option #83",
+      "summary": "Suggested product enhancement: product feature enhancement option #83. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 49,
+      "growth_rate": 34.55,
+      "priority": "Medium",
+      "revenue_impact": 7399,
+      "status": "Planned",
+      "created_at": "2025-11-21T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-84",
+      "name": "Product Feature Enhancement Option #84",
+      "summary": "Suggested product enhancement: product feature enhancement option #84. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 19,
+      "growth_rate": 35.53,
+      "priority": "High",
+      "revenue_impact": 2128,
+      "status": "Backlog",
+      "created_at": "2025-11-19T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-85",
+      "name": "Product Feature Enhancement Option #85",
+      "summary": "Suggested product enhancement: product feature enhancement option #85. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 99,
+      "growth_rate": 46.35,
+      "priority": "High",
+      "revenue_impact": 7920,
+      "status": "Backlog",
+      "created_at": "2025-11-16T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-86",
+      "name": "Product Feature Enhancement Option #86",
+      "summary": "Suggested product enhancement: product feature enhancement option #86. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 54,
+      "growth_rate": 31.96,
+      "priority": "High",
+      "revenue_impact": 7776,
+      "status": "Backlog",
+      "created_at": "2025-11-14T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-87",
+      "name": "Product Feature Enhancement Option #87",
+      "summary": "Suggested product enhancement: product feature enhancement option #87. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 74,
+      "growth_rate": 38.85,
+      "priority": "Low",
+      "revenue_impact": 11618,
+      "status": "Completed",
+      "created_at": "2025-11-11T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-88",
+      "name": "Product Feature Enhancement Option #88",
+      "summary": "Suggested product enhancement: product feature enhancement option #88. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 23,
+      "growth_rate": 26.01,
+      "priority": "Medium",
+      "revenue_impact": 3841,
+      "status": "Planned",
+      "created_at": "2025-11-09T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-89",
+      "name": "Product Feature Enhancement Option #89",
+      "summary": "Suggested product enhancement: product feature enhancement option #89. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 65,
+      "growth_rate": 10.57,
+      "priority": "High",
+      "revenue_impact": 7735,
+      "status": "Completed",
+      "created_at": "2025-11-06T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-90",
+      "name": "Product Feature Enhancement Option #90",
+      "summary": "Suggested product enhancement: product feature enhancement option #90. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 69,
+      "growth_rate": 26.13,
+      "priority": "High",
+      "revenue_impact": 8142,
+      "status": "In Progress",
+      "created_at": "2025-11-04T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-91",
+      "name": "Product Feature Enhancement Option #91",
+      "summary": "Suggested product enhancement: product feature enhancement option #91. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 41,
+      "growth_rate": 49.84,
+      "priority": "Low",
+      "revenue_impact": 4961,
+      "status": "Completed",
+      "created_at": "2025-11-01T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-92",
+      "name": "Product Feature Enhancement Option #92",
+      "summary": "Suggested product enhancement: product feature enhancement option #92. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 41,
+      "growth_rate": 45.03,
+      "priority": "High",
+      "revenue_impact": 6027,
+      "status": "In Progress",
+      "created_at": "2025-10-30T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-93",
+      "name": "Product Feature Enhancement Option #93",
+      "summary": "Suggested product enhancement: product feature enhancement option #93. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 13,
+      "growth_rate": 29.66,
+      "priority": "Medium",
+      "revenue_impact": 1248,
+      "status": "Completed",
+      "created_at": "2025-10-27T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-94",
+      "name": "Product Feature Enhancement Option #94",
+      "summary": "Suggested product enhancement: product feature enhancement option #94. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 37,
+      "growth_rate": 21.29,
+      "priority": "Medium",
+      "revenue_impact": 5069,
+      "status": "In Progress",
+      "created_at": "2025-10-25T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-95",
+      "name": "Product Feature Enhancement Option #95",
+      "summary": "Suggested product enhancement: product feature enhancement option #95. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 86,
+      "growth_rate": 42.07,
+      "priority": "Medium",
+      "revenue_impact": 16512,
+      "status": "Backlog",
+      "created_at": "2025-10-22T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-96",
+      "name": "Product Feature Enhancement Option #96",
+      "summary": "Suggested product enhancement: product feature enhancement option #96. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 76,
+      "growth_rate": 56.88,
+      "priority": "Low",
+      "revenue_impact": 8436,
+      "status": "Completed",
+      "created_at": "2025-10-20T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-97",
+      "name": "Product Feature Enhancement Option #97",
+      "summary": "Suggested product enhancement: product feature enhancement option #97. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 72,
+      "growth_rate": 33.31,
+      "priority": "Low",
+      "revenue_impact": 12312,
+      "status": "Completed",
+      "created_at": "2025-10-17T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-98",
+      "name": "Product Feature Enhancement Option #98",
+      "summary": "Suggested product enhancement: product feature enhancement option #98. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 67,
+      "growth_rate": 47.58,
+      "priority": "Low",
+      "revenue_impact": 8375,
+      "status": "Planned",
+      "created_at": "2025-10-15T06:21:21.561507Z"
+    },
+    {
+      "id": "feature-99",
+      "name": "Product Feature Enhancement Option #99",
+      "summary": "Suggested product enhancement: product feature enhancement option #99. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 61,
+      "growth_rate": 41.51,
+      "priority": "Medium",
+      "revenue_impact": 12078,
+      "status": "In Progress",
+      "created_at": "2025-10-12T18:21:21.561507Z"
+    },
+    {
+      "id": "feature-100",
+      "name": "Product Feature Enhancement Option #100",
+      "summary": "Suggested product enhancement: product feature enhancement option #100. Initiated by multiple customer requests and analyzed via vector memory systems.",
+      "popularity_score": 70,
+      "growth_rate": 33.21,
+      "priority": "Medium",
+      "revenue_impact": 11060,
+      "status": "In Progress",
+      "created_at": "2025-10-10T06:21:21.561507Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec-1",
+      "title": "Upgrade Stripe Webhook Concurrency Limits",
+      "description": "Memory recall shows checkout timeouts peaked during European business hours. Increase API handler workers to prevent gateway dropouts.",
+      "business_impact": "Reduce cart abandonment and secure pending subscriptions.",
+      "affected_users": 1420,
+      "revenue_risk": 42000,
+      "confidence": 96,
+      "suggested_action": "Edit `services/stripe.py` thread-pool config and check AWS server limits.",
+      "priority": "Critical",
+      "created_at": "2026-06-14T18:21:21.561507Z"
+    },
+    {
+      "id": "rec-2",
+      "title": "Redesign Workspace Member Invitation Flow",
+      "description": "Reflection analysis highlights 42 complaints regarding expired verification tokens. Change token duration from 2 hours to 24 hours.",
+      "business_impact": "Boost workspace activation rate by 14.5% MoM.",
+      "affected_users": 840,
+      "revenue_risk": 18500,
+      "confidence": 91,
+      "suggested_action": "Update Supabase JWT expiration hook in invite handler.",
+      "priority": "High",
+      "created_at": "2026-06-13T18:21:21.561507Z"
+    },
+    {
+      "id": "rec-3",
+      "title": "Build Slack Alerts Notification Toggle",
+      "description": "Ingestion trends reveal high demand for real-time notifications when new Critical feedback arrives.",
+      "business_impact": "Reduce customer support SLA times from 4 hours to 15 minutes.",
+      "affected_users": 2150,
+      "revenue_risk": 12000,
+      "confidence": 88,
+      "suggested_action": "Leverage Slack incoming webhooks and deploy message dispatcher.",
+      "priority": "Medium",
+      "created_at": "2026-06-12T18:21:21.561507Z"
+    },
+    {
+      "id": "rec-4",
+      "title": "Fix Chart Legend Contrast in Light Theme",
+      "description": "Several customers on Twitter reported text formatting difficulties in the Executive PDF exports on laptops.",
+      "business_impact": "Improve accessibility scores (WCAG AA).",
+      "affected_users": 320,
+      "revenue_risk": 3500,
+      "confidence": 94,
+      "suggested_action": "Override chart typography color styles to Deep Slate (#1E2433).",
+      "priority": "Low",
+      "created_at": "2026-06-11T18:21:21.561507Z"
+    }
+  ],
+  "timelineEvents": [
+    {
+      "id": "time-1",
+      "month": "July 2025",
+      "title": "Platform Memory Initialization",
+      "description": "Successfully configured Hindsight client vector pipelines. Started scraping Discord user groups.",
+      "memory_growth": 15,
+      "evolution_type": "memory"
+    },
+    {
+      "id": "time-2",
+      "month": "September 2025",
+      "title": "Emergence of Stripe Checkout Gateway timeouts",
+      "description": "Groq detection marked Stripe 402 response clusters with high priority. Triggered action ticket.",
+      "memory_growth": 45,
+      "evolution_type": "issue"
+    },
+    {
+      "id": "time-3",
+      "month": "November 2025",
+      "title": "Workspace Invite Security Patch Release",
+      "description": "Resolved the 2-hour invitation token expiry friction. Workspace onboarding statistics increased 18% MoM.",
+      "memory_growth": 68,
+      "evolution_type": "feature"
+    },
+    {
+      "id": "time-4",
+      "month": "February 2026",
+      "title": "Deep Memory Retrieval Engine Upgrade",
+      "description": "Embedded Hindsight Recall with context mapping. AI assistant response accuracy rose to 98.4%.",
+      "memory_growth": 120,
+      "evolution_type": "memory"
+    },
+    {
+      "id": "time-5",
+      "month": "May 2026",
+      "title": "12-Month Historical Forecast Prediction",
+      "description": "Began modeling customer pain point vectors to recommend preventative engineering tasks.",
+      "memory_growth": 180,
+      "evolution_type": "trend"
+    }
+  ],
+  "integrations": [
+    {
+      "id": "int-1",
+      "name": "Gmail Integration",
+      "type": "email",
+      "status": "Connected",
+      "health": "healthy",
+      "last_sync": "2 mins ago",
+      "records_synced": 1420,
+      "errors": 0
+    },
+    {
+      "id": "int-2",
+      "name": "Slack Link",
+      "type": "chat",
+      "status": "Connected",
+      "health": "healthy",
+      "last_sync": "5 mins ago",
+      "records_synced": 3500,
+      "errors": 0
+    },
+    {
+      "id": "int-3",
+      "name": "Discord Scraper",
+      "type": "chat",
+      "status": "Connected",
+      "health": "warning",
+      "last_sync": "12 mins ago",
+      "records_synced": 2150,
+      "errors": 4
+    },
+    {
+      "id": "int-4",
+      "name": "Zendesk Sync",
+      "type": "support",
+      "status": "Connected",
+      "health": "healthy",
+      "last_sync": "1 hour ago",
+      "records_synced": 1100,
+      "errors": 0
+    },
+    {
+      "id": "int-5",
+      "name": "HubSpot CRM",
+      "type": "crm",
+      "status": "Syncing",
+      "health": "healthy",
+      "last_sync": "Just now",
+      "records_synced": 650,
+      "errors": 0
+    },
+    {
+      "id": "int-6",
+      "name": "Intercom Widget",
+      "type": "support",
+      "status": "Connected",
+      "health": "error",
+      "last_sync": "4 hours ago",
+      "records_synced": 940,
+      "errors": 18
+    },
+    {
+      "id": "int-7",
+      "name": "Reddit Community Scraping",
+      "type": "social",
+      "status": "Connected",
+      "health": "healthy",
+      "last_sync": "3 hours ago",
+      "records_synced": 320,
+      "errors": 0
+    },
+    {
+      "id": "int-8",
+      "name": "Twitter/X Stream API",
+      "type": "social",
+      "status": "Disconnected",
+      "health": "warning",
+      "last_sync": "Never",
+      "records_synced": 0,
+      "errors": 0
+    },
+    {
+      "id": "int-9",
+      "name": "CSV Feed File Upload",
+      "type": "manual",
+      "status": "Connected",
+      "health": "healthy",
+      "last_sync": "1 day ago",
+      "records_synced": 890,
+      "errors": 0
+    }
+  ],
+  "notifications": [
+    {
+      "id": "not-6",
+      "title": "Critical feedback from Evelyn Vance",
+      "message": "Gmail sync credentials rejected on secondary account",
+      "type": "ai",
+      "read": false,
+      "time": "Just now"
+    },
+    {
+      "id": "not-5",
+      "title": "Critical feedback from Evelyn Vance",
+      "message": "Stripe payment failed on mobile client safari",
+      "type": "ai",
+      "read": false,
+      "time": "Just now"
+    },
+    {
+      "id": "not-1",
+      "title": "New Critical Cluster Detected",
+      "message": "Stripe Checkout Gateway Timeout is surging (+42% growth rate in last 4 hours).",
+      "type": "ai",
+      "read": false,
+      "time": "5m ago"
+    },
+    {
+      "id": "not-2",
+      "title": "Slack webhook connection warning",
+      "message": "Integration returned status code 429: Too Many Requests on alert dispatcher.",
+      "type": "system",
+      "read": false,
+      "time": "24m ago"
+    },
+    {
+      "id": "not-3",
+      "title": "Monthly Report Ready",
+      "message": "May 2026 Executive Performance Summary has been generated.",
+      "type": "trend",
+      "read": true,
+      "time": "2h ago"
+    },
+    {
+      "id": "not-4",
+      "title": "Issue #104 Assigned",
+      "message": "Alex Rivera assigned you to 'Investigate checkout failure code 402'.",
+      "type": "issue",
+      "read": true,
+      "time": "1d ago"
+    }
+  ],
+  "workspaceMembers": [
+    {
+      "id": "user-1",
+      "name": "Sarah Jenkins",
+      "email": "sarah@revoxa.ai",
+      "role": "Owner",
+      "avatar": "SJ"
+    },
+    {
+      "id": "user-2",
+      "name": "Alex Rivera",
+      "email": "alex@revoxa.ai",
+      "role": "Admin",
+      "avatar": "AR"
+    },
+    {
+      "id": "user-3",
+      "name": "Clara Vance",
+      "email": "clara@revoxa.ai",
+      "role": "Manager",
+      "avatar": "CV"
+    },
+    {
+      "id": "user-4",
+      "name": "Dave Miller",
+      "email": "dave@revoxa.ai",
+      "role": "Analyst",
+      "avatar": "DM"
+    }
+  ],
+  "workspaceTasks": [
+    {
+      "id": "task-1",
+      "title": "Audit checkout timeout database logs",
+      "assignee": "Dave Miller",
+      "status": "In Progress",
+      "priority": "High"
+    },
+    {
+      "id": "task-2",
+      "title": "Verify email template webhook URLs",
+      "assignee": "Alex Rivera",
+      "status": "Open",
+      "priority": "Medium"
+    },
+    {
+      "id": "task-3",
+      "title": "Deploy version 4.2 feedback graph nodes",
+      "assignee": "Sarah Jenkins",
+      "status": "Resolved",
+      "priority": "High"
+    },
+    {
+      "id": "task-4",
+      "title": "Write weekly board meeting PDF draft",
+      "assignee": "Clara Vance",
+      "status": "In Progress",
+      "priority": "Low"
+    }
+  ],
+  "settings": {
+    "ai_model": "openai/gpt-oss-120b (Groq API)",
+    "embedding_model": "bge-small-en-v1.5 (384 dimensions)"
+  }
+}
